@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "browserslist": [
     "defaults"
-  ], 
+  ],
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -12,13 +12,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@iconify-json/stash": "^1.2.2",
+    "@tailwindcss/vite": "^4.1.8",
     "astro": "^5.9.1",
-    "astro-icon": "^1.1.5"
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "open-props": "^1.7.15",
     "postcss": "^8.5.4",
-    "postcss-jit-props": "^1.0.16"
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12"
   }
 }
