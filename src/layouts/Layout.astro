@@ -1,27 +1,22 @@
 ---
-import "./src/styles/global.css";
+import "../styles/global.css";
 import { Font } from "astro:assets";
 import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Font cssVariable="--font-quicksand" preload />
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Supporting You Website</title>
-    </head>
-    <body>
-        <Navigation />
-        <slot />
-        <container class="flex flex-col md:flex-row justify-around">
-            <div class="m-4 text-2xl font-semibold">
-                This should be the Quicksand font in semi-bold 2xl.
-            </div>
-            <div class="m-4 text-2xl">This should be normal weight.</div>
-        </container>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Supporting You Website</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
 </html>

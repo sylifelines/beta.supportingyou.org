@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @theme {
-  --color-syteal: #009682;
+  --color-sygreen: #009682;
+  --color-syslate: #404a5c;
+  --color-syblue: #5cbad1;
+  --color-sylightgreen: #bade66;
+  --color-syorange: #ff8c14;
+  --color-syyellow: #f7d90d;
+  --color-sylightblue: #a6deeb;
+  --color-syblue: #5cbad1;
+  --color-syteal: #0d6e85;
+  --color-sypurple: #6e5780;
 }
 body {
   font-family: var(--font-quicksand);
