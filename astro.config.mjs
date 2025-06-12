@@ -13,7 +13,11 @@ export default defineConfig({
     icon({
       include: {
         // Include only required stash icons in the bundle
-        "material-symbols": ["menu-rounded", "account-circle-outline", "shopping-cart-outline"],
+        "material-symbols": [
+          "menu-rounded",
+          "account-circle-outline",
+          "shopping-cart-outline",
+        ],
         // Include all `uis` icons
         // uis: ['*']
       },

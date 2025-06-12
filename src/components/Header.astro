@@ -12,21 +12,21 @@ const navLinks = [
     url: "#",
   },
   {
-    icon: "shopping-cart-outline",
+    icon: "material-symbols:shopping-cart-outline",
     name: "Shop",
     url: "#",
   },
   {
-    icon: "account-circle-outline",
+    icon: "material-symbols:account-circle-outline",
     name: "Login",
     url: "#",
   },
 ];
 ---
 
-<header class="absolute inset-x-0 top-0 z-50">
+<header x-data="{ open: false }" class="">
   <nav
-    class="flex items-center justify-between p-6 lg:px-8"
+    class="flex items-center justify-between p-6 lg:px-8 bg-sygreen"
     aria-label="Global"
   >
     <div class="flex lg:flex-1">
@@ -36,32 +36,31 @@ const navLinks = [
       </a>
     </div>
     <div class="flex lg:hidden">
-      <button
-        type="button"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
-      >
+      <button type="button" @click="open = ! open">
         <span class="sr-only">Open main menu</span>
-        <svg
-          class="size-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          aria-hidden="true"
-          data-slot="icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-        </svg>
+        <Icon
+          class="mr-[24px] text-white"
+          name="material-symbols:menu-rounded"
+          width={50}
+          height={50}
+        />
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       {
         navLinks.map((link) => (
           <a href={link.url} class="text-sm/6 font-semibold text-white">
-            {link.name}
+            <div class="flex items-center">
+              {link.icon && (
+                <Icon
+                  class="mr-[4px]"
+                  name={link.icon}
+                  width={25}
+                  height={25}
+                />
+              )}{" "}
+              {link.name}
+            </div>
           </a>
         ))
       }
@@ -73,7 +72,13 @@ const navLinks = [
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="lg:hidden" role="dialog" aria-modal="true">
+  <div
+    x-show="open"
+    @click.outside="open = false"
+    class="lg:hidden"
+    role="dialog"
+    aria-modal="true"
+  >
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div class="fixed inset-0 z-50"></div>
     <div
@@ -84,7 +89,7 @@ const navLinks = [
           <span class="sr-only">Supporting You</span>
           <Icon class="ml-[24px]" name="logo" width={80} height={63} />
         </a>
-        <button type="button" class="-m-2.5 rounded-md p-2.5 text-white">
+        <button type="button" type="button" @click="open = ! open">
           <span class="sr-only">Close menu</span>
           <Icon
             class="mr-[24px] text-white rotate-90"
@@ -103,8 +108,17 @@ const navLinks = [
                   href={link.url}
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-syteal/40"
                 >
-                <!-- TODO: display icon if set -->
-                  {link.name}
+                  <div class="flex items-center">
+                    {link.icon && (
+                      <Icon
+                        class="mr-[4px]"
+                        name={link.icon}
+                        width={25}
+                        height={25}
+                      />
+                    )}{" "}
+                    {link.name}
+                  </div>
                 </a>
               ))
             }
