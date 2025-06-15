@@ -7,13 +7,11 @@ import Hero from "../components/Hero.astro";
 ---
 
 <Layout>
-  <div class="bg-syslate/40">
-    <!-- <Hero /> -->
-    <container class="flex flex-col md:flex-row justify-around">
-      <div class="m-4 text-2xl font-semibold">
-        This should be the Quicksand font in semi-bold 2xl.
-      </div>
-      <div class="m-4 text-2xl">This should be normal weight.</div>
-    </container>
-  </div>
+  <Hero />
+  <container class="flex flex-col md:flex-row justify-around">
+    <div class="m-4 text-2xl font-semibold">
+      This should be the Quicksand font in semi-bold 2xl.
+    </div>
+    <div class="m-4 text-2xl">This should be normal weight.</div>
+  </container>
 </Layout>

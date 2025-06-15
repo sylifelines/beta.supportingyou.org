@@ -24,53 +24,50 @@ const navLinks = [
 ];
 ---
 
-<header x-data="{ open: false }" class="">
-  <nav
-    class="flex items-center justify-between p-6 lg:px-8 bg-sygreen"
-    aria-label="Global"
-  >
-    <div class="flex lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">Supporting You</span>
-        <Icon class="ml-[24px]" name="logo" width={80} height={63} />
-      </a>
-    </div>
-    <div class="flex lg:hidden">
-      <button type="button" @click="open = ! open">
-        <span class="sr-only">Open main menu</span>
-        <Icon
-          class="mr-[24px] text-white"
-          name="material-symbols:menu-rounded"
-          width={50}
-          height={50}
-        />
-      </button>
-    </div>
-    <div class="hidden lg:flex lg:gap-x-12">
-      {
-        navLinks.map((link) => (
-          <a href={link.url} class="text-sm/6 font-semibold text-white">
-            <div class="flex items-center">
-              {link.icon && (
-                <Icon
-                  class="mr-[4px]"
-                  name={link.icon}
-                  width={25}
-                  height={25}
-                />
-              )}{" "}
-              {link.name}
-            </div>
-          </a>
-        ))
-      }
-    </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm/6 font-semibold text-white"
-        >Log in <span aria-hidden="true">&rarr;</span></a
-      >
-    </div>
-  </nav>
+<header x-data="{ open: false }">
+  <div class="bg-sygreen">
+    <nav
+      class="flex items-center justify-between bg-sygreen h-[7.5rem] mx-1.5 md:mx-2.5 2xl:mx-[7.5rem]"
+      aria-label="Global"
+    >
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Supporting You</span>
+          <Icon class="ml-[24px]" name="logo" width={80} height={63} />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" @click="open = ! open">
+          <span class="sr-only">Open main menu</span>
+          <Icon
+            class="mr-[24px] text-white"
+            name="material-symbols:menu-rounded"
+            width={50}
+            height={50}
+          />
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        {
+          navLinks.map((link) => (
+            <a href={link.url} class="text-sm/6 font-semibold text-white">
+              <div class="flex items-center">
+                {link.icon && (
+                  <Icon
+                    class="mr-[4px]"
+                    name={link.icon}
+                    width={25}
+                    height={25}
+                  />
+                )}{" "}
+                {link.name}
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </nav>
+  </div>
   <!-- Mobile menu, show/hide based on menu open state. -->
   <div
     x-show="open"
