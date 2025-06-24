@@ -3,19 +3,20 @@ import { heading, text } from "@data/hero.json";
 ---
 
 <section
-  class="flex flex-col mx-auto min-h-[583px] bg-[url(../assets/sm-bg.png)]
-    md:bg-[url(../assets/md-bg.png)]
-    lg:bg-[url(../assets/lg-bg.png)]
-    bg-cover bg-bottom"
+  class="flex flex-col mx-auto
+  min-h-[583px] md:min-h-[665px] lg:min-h-[780px]
+  bg-[url(../assets/lg-bg.png)]
+  bg-cover
+  bg-bottom"
 >
-  <div class="text-center border border-orange-400">
-    <h1
-      class="mt-[120px] text-[min(10vw,4rem)] font-bold text-balance text-white"
-    >
-      {heading}
-    </h1>
-    <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-      {text}
-    </p>
-  </div>
+  <h1
+    class="mt-30 ml-6 md:ml-10 lg:ml-30 text-[min(10vw,4rem)] font-bold text-balance text-white"
+  >
+    {heading}
+  </h1>
+  <p
+    class="ml-6 md:ml-10 lg:ml-30 text-[min(1rem, 1.5rem)] font-medium text-pretty text-white sm:text-xl/8"
+  >
+    {text}
+  </p>
 </section>
