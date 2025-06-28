@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import sectionImage from "@assets/c788daf1a8176ebfaa284c941ccfeb0d8f879ee6.jpg";
+import { heading } from "@data/whatToDo.json";
+import WhatToDos from "@components/WhatToDos.astro";
+---
+
+<div class="overflow-hidden bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div
+      class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start"
+    >
+      <div class="px-6 lg:px-0 lg:pt-4 lg:pr-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <h2 class="text-4xl lg:text-5xl font-bold text-sygreen mb-6 md:mb-8">
+            {heading}
+          </h2>
+          <WhatToDos />
+        </div>
+      </div>
+      <div class="mx-auto">
+        <div class="" aria-hidden="true"></div>
+        <Image
+          src={sectionImage}
+          alt="different people doing volunteer work with food"
+          class="rounded-xl w-85 h-100 md:w-185 lg:w-128 lg:h-146 object-cover"
+        />
+        <div class="" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</div>

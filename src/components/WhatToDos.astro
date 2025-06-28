@@ -1,0 +1,12 @@
+---
+import { items } from "@data/whatToDo.json";
+import WhatToDoCard from "@components/WhatToDoCard.astro";
+---
+
+<div
+  class="mx-auto grid max-w-2xl grid-cols-1 gap-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+>
+  <dl class="col-span-3 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
+    {items.map((item) => <WhatToDoCard item={item} />)}
+  </dl>
+</div>

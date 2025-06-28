@@ -1,17 +1,10 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import Hero from "@components/Hero.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Hero from "@sections/HeroSection.astro";
+import WhatToDo from "@sections/WhatToDoSection.astro";
 ---
 
 <Layout>
   <Hero />
-  <container class="flex flex-col md:flex-row justify-around">
-    <div class="m-4 text-2xl font-semibold">
-      This should be the Quicksand font in semi-bold 2xl.
-    </div>
-    <div class="m-4 text-2xl">This should be normal weight.</div>
-  </container>
+  <WhatToDo />
 </Layout>

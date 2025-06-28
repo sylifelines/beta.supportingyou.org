@@ -11,6 +11,7 @@
       "@icons/*": [ "icons/*" ],
       "@layouts/*": [ "layouts/*" ],
       "@pages/*": [ "pages/*" ],
+      "@sections/*": [ "sections/*" ],
       "@styles/*": [ "styles/*" ]
     },
     "plugins": [

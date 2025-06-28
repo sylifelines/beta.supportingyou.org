@@ -1,0 +1,17 @@
+---
+import { Icon } from "astro-icon/components";
+const { item } = Astro.props;
+const { icon, title } = item;
+---
+
+<div class="p-4 rounded-lg bg-sylightblue/20">
+  <dt>
+    <div class="text-syslate flex size-10 items-center justify-center">
+      {icon && <Icon name={icon} width={25} height={25} />}{" "}
+      <!-- Put an icon here, using whatToDo data -->
+    </div>
+  </dt>
+  <dd class="text-base text-syslate">
+    {title}
+  </dd>
+</div>

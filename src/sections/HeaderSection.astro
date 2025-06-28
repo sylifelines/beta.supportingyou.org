@@ -1,0 +1,120 @@
+---
+import { Icon } from "astro-icon/components";
+const navLinks = [
+  {
+    icon: "",
+    name: "Business Network",
+    url: "#",
+  },
+  {
+    icon: "",
+    name: "Register",
+    url: "#",
+  },
+  {
+    icon: "material-symbols:shopping-cart-outline",
+    name: "Shop",
+    url: "#",
+  },
+  {
+    icon: "material-symbols:account-circle-outline",
+    name: "Login",
+    url: "#",
+  },
+];
+---
+
+<header x-data="{ open: false }">
+  <div class="bg-sygreen">
+    <nav
+      class="flex justify-between bg-sygreen h-30 mx-6 md:mx-10 lg:mx-30"
+      aria-label="Global"
+    >
+      <div class="flex lg:flex-1">
+        <a href="#">
+          <span class="sr-only">Supporting You</span>
+          <Icon class="mt-6" name="logo" width={80} height={63} />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" @click="open = ! open">
+          <span class="sr-only">Open main menu</span>
+          <Icon
+            class="text-white"
+            name="material-symbols:menu-rounded"
+            width={50}
+            height={50}
+          />
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        {
+          navLinks.map((link) => (
+            <a href={link.url} class="text-sm/6 font-semibold text-white">
+              <div class="flex items-center">
+                {link.icon && <Icon name={link.icon} width={25} height={25} />}{" "}
+                {link.name}
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </nav>
+  </div>
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div
+    x-show="open"
+    @click.outside="open = false"
+    class="lg:hidden"
+    role="dialog"
+    aria-modal="true"
+  >
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-50"></div>
+    <div
+      class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-sygreen p-6 sm:max-w-sm sm:ring-1 sm:ring-white/10"
+    >
+      <div class="flex items-center justify-between">
+        <a href="#">
+          <span class="sr-only">Supporting You</span>
+          <Icon name="logo" width={80} height={63} />
+        </a>
+        <button type="button" type="button" @click="open = ! open">
+          <span class="sr-only">Close menu</span>
+          <Icon
+            class="text-white rotate-90"
+            name="material-symbols:menu-rounded"
+            width={50}
+            height={50}
+          />
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/25">
+          <div class="space-y-2 py-6">
+            {
+              navLinks.map((link) => (
+                <a
+                  href={link.url}
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-syteal/40"
+                >
+                  <div class="flex items-center">
+                    {link.icon && (
+                      <Icon
+                        class="mr-1"
+                        name={link.icon}
+                        width={25}
+                        height={25}
+                      />
+                    )}{" "}
+                    {link.name}
+                  </div>
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
