@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon/components";
+const { item } = Astro.props;
+const { icon, title, description } = item;
+---
+
+<div
+  class="p-8 rounded-2xl bg-white text-center flex flex-col items-center justify-center w-85 h-85"
+>
+  {
+    icon && (
+      <dt>
+        <div class="text-syslate flex size-10 items-center justify-center text-wrap">
+          <Icon name={icon} width={25} height={25} />
+        </div>
+      </dt>
+    )
+  }
+  <dd class="text-2xl/8 font-bold text-syslate">
+    {title}
+  </dd>
+  <dd class="mt-3 text-base/5 font-semibold text-syslate">
+    {description}
+  </dd>
+</div>

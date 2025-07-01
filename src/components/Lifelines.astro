@@ -1,0 +1,26 @@
+---
+import { heading, subheading, items } from "@data/lifelines.json";
+import BenefitCard from "@components/BenefitCard.astro";
+---
+
+<div
+  class="py-24 sm:py-32 z-10 flex flex-col items-center justify-center text-center"
+>
+  <div
+    class="-mt-24 md:-mt-34 flex flex-col items-center max-w-7xl px-6 lg:px-8"
+  >
+    <div class="flex flex-col w-85 md:w-141">
+      <h2
+        class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl"
+      >
+        {heading}
+      </h2>
+      <p class="mt-6 text-lg/8 text-white">{subheading}</p>
+    </div>
+    <dl
+      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+    >
+      {items.map((item) => <BenefitCard item={item} />)}
+    </dl>
+  </div>
+</div>
