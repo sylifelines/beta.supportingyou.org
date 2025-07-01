@@ -47,10 +47,10 @@ const navLinks = [
           />
         </button>
       </div>
-      <div class="hidden lg:flex lg:gap-x-12">
+      <div class="hidden lg:flex items-center lg:gap-x-12">
         {
           navLinks.map((link) => (
-            <a href={link.url} class="text-sm/6 font-semibold text-white">
+            <a href={link.url} class="text-xl font-semibold text-white">
               <div class="flex items-center">
                 {link.icon && <Icon name={link.icon} width={25} height={25} />}{" "}
                 {link.name}
