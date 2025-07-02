@@ -1,0 +1,32 @@
+---
+import { heading, subheading, items } from "@data/businessBenefits.json";
+import BusinessBenefitCard from "@components/BusinessBenefitCard.astro";
+import img1 from "@assets/bbImages/fea1a84b88bd4e59cca5d6cb4ad3ef6482e57de4.jpg";
+import img2 from "@assets/bbImages/barber-giving-high-five-client.jpg.v2.jpg";
+import img3 from "@assets/bbImages/6797108b8ff532969d76194d58b18854c35d9e85.png";
+import img4 from "@assets/bbImages/5217f0f692f237638973ed73392a58a190a2c440.jpg";
+---
+
+<div
+  class="py-24 sm:py-32 z-10 flex flex-col items-center justify-center text-center"
+>
+  <div
+    class="-mt-24 md:-mt-34 flex flex-col items-center max-w-7xl px-6 lg:px-8"
+  >
+    <div class="flex flex-col w-85 md:w-141">
+      <h2
+        class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl"
+      >
+        {heading}
+      </h2>
+      <p class="mt-6 text-lg/8 text-white">{subheading}</p>
+    </div>
+
+    <div class="container carousel carousel-center rounded-box space-x-4 p-4">
+      <BusinessBenefitCard item={items[0]} image={img1} />
+      <BusinessBenefitCard item={items[1]} image={img2} />
+      <BusinessBenefitCard item={items[2]} image={img3} />
+      <BusinessBenefitCard item={items[3]} image={img4} />
+    </div>
+  </div>
+</div>

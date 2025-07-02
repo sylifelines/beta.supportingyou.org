@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 @theme {
   /*Screen Sizes  */
   --breakpoint-xs: 24.5rem; /* 392px */

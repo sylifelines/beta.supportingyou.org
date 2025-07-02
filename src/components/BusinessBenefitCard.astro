@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+const { item, image } = Astro.props;
+const { title, description } = item;
+---
+
+<div class="carousel-item">
+  <div class="flex flex-col justify-start text-center">
+    <Image
+      src={image}
+      alt={description}
+      width={350}
+      height={344}
+      class="rounded-box h-[344px] w-[350px] object-cover"
+    />
+    <div class="w-87 mt-2">
+      <p class="text-2xl/8 font-bold text-black">
+        {title}
+      </p>
+      <p class="mt-3 text-base/5 font-semibold text-syslate">
+        {description}
+      </p>
+    </div>
+  </div>
+</div>
