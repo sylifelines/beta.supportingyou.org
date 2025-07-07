@@ -3,20 +3,16 @@
   "subheading": "Lorem ipsum dolor sit amet consectetur. Fringilla aliquam in arcu  tempor viverra. Lorem ipsum dolor sit amet consectetur. Fringilla aliquam in arcu tempor viverra.",
   "items": [
     {
-      "title": "Speak to your SY Independent Contributor now",
-      "description": "Lorem ipsum"
+      "text": "Speak to your SY Independent Contributor now"
     },
     {
-      "title": "Access the live Testimonials,",
-      "description": "Lorem ipsum"
+      "text": "Access the live Testimonials"
     },
     {
-      "title": "Join other reliable, credible and passionate businesses today and make the difference in your community",
-      "description": "Lorem ipsum"
+      "text": "Join other reliable, credible and passionate businesses today and make the difference in your community"
     },
     {
-      "title": "Complete our Fact Find page online ",
-      "description": "Lorem ipsum"
+      "text": "Complete our Fact Find page online"
     }
   ],
   "buttonText": "Get in touch"

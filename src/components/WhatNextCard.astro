@@ -1,0 +1,15 @@
+---
+import { Icon } from "astro-icon/components";
+const { text } = Astro.props;
+const icon = "material-symbols:check-box-outline-rounded";
+---
+
+<div class="flex items-center mx-6 mt-3 md:mx-0 p-2 rounded-xl bg-white">
+  <div class="text-sygreen flex size-10 items-center justify-center">
+    <Icon name={icon} width={25} height={25} />{" "}
+    <!-- Put an icon here, using whatToDo data -->
+  </div>
+  <div class="ml-2 text-base text-black font-bold">
+    {text}
+  </div>
+</div>

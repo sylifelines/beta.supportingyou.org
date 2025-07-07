@@ -1,0 +1,10 @@
+---
+import { items } from "@data/whatNext.json";
+import WhatNextCard from "@components/WhatNextCard.astro";
+---
+
+<div class="mx-auto flex flex-col max-w-2xl">
+  <dl>
+    {items.map((item) => <WhatNextCard text={item.text} />)}
+  </dl>
+</div>

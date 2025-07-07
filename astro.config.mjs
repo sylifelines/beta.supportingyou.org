@@ -21,6 +21,7 @@ export default defineConfig({
                     "emoji-people-rounded",
                     "voice-chat-outline-rounded",
                     "kid-star-outline",
+                    "check-box-outline-rounded",
                 ],
                 // Include all `uis` icons
                 // uis: ['*']

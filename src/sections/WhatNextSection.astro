@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import sectionImage from "@assets/e65e3737ecd35452ad5fc556f88f8cd735092c8c.jpg";
+import { heading, subheading } from "../data/whatNext.json";
+import WhatNexts from "@components/WhatNexts.astro";
+---
+
+<div class="overflow-hidden bg-sylightblue/20 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
+    <div
+      class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start"
+    >
+      <div class="mx-auto lg:hidden">
+        <div aria-hidden="true"></div>
+        <Image
+          src={sectionImage}
+          alt="different people doing volunteer work with food"
+          class="rounded-xl w-85 h-100 md:w-185 lg:w-128 lg:h-146 object-cover"
+        />
+        <div class="" aria-hidden="true"></div>
+      </div>
+      <div class="px-6 lg:px-0 lg:pt-4 lg:pr-4">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+          <h2 class="text-4xl lg:text-5xl font-bold text-sygreen mb-6 md:mb-8">
+            {heading}
+          </h2>
+          <p class="my-6 text-lg/8 text-syslate">{subheading}</p>
+          <WhatNexts />
+        </div>
+      </div>
+      <div class="mx-auto hidden lg:block">
+        <div aria-hidden="true"></div>
+        <Image
+          src={sectionImage}
+          alt="different people doing volunteer work with food"
+          class="rounded-xl w-85 h-100 md:w-185 lg:w-128 lg:h-146 object-cover"
+        />
+        <div class="" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</div>
