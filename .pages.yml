@@ -1,3 +1,6 @@
+settings:
+  content:
+    merge: true
 components:
   hero:
     label: Hero Section
