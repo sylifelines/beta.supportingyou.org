@@ -55,7 +55,7 @@ content:
         type: text
   - name: whatNext
     label: Wht Next Section
-    path: scr/data/whatNext.json
+    path: src/data/whatNext.json
     type: file
     fields:
       - name: heading
