@@ -10,3 +10,6 @@ components:
       - name: subtext
         label: Subtext
         type: text
+      - name: buttonText
+        label: Button Text
+        type: text
