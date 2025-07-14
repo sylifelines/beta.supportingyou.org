@@ -1,5 +1,5 @@
 components:
-  hero: # 'hero' is the component name/key
+  hero:
     label: Hero Section
     type: object
     fields:
@@ -7,9 +7,53 @@ components:
         label: Heading
         type: text
         required: true
-      - name: subtext
-        label: Subtext
+      - name:  subheading
+        label: Sub Heading
         type: text
       - name: buttonText
         label: Button Text
+        type: text
+  communityHelp:
+    label: Community Help Section
+    type: object
+    fields:
+      - name: heading
+        label: Heading
+        type: text
+        required: true
+      - name: subheading
+        label: Sub Heading
+        type: text
+  communityBenefit:
+    label: Community Benefit Section
+    type: object
+    fields:
+      - name: heading
+        label: Heading
+        type: text
+        required: true
+      - name: subheading
+        label: Sub Heading
+        type: text
+  businessBenefit:
+    label: Business Benefit Section
+    type: object
+    fields:
+      - name: heading
+        label: Heading
+        type: text
+        required: true
+      - name: subheading
+        label: Sub Heading
+        type: text
+  whatNext:
+    label: Wht Next Section
+    type: object
+    fields:
+      - name: heading
+        label: Heading
+        type: text
+        required: true
+      - name: subheading
+        label: Sub Heading
         type: text
