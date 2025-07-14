@@ -1,0 +1,15 @@
+components:
+  hero:
+  label: Hero Section
+  type: object
+  fields:
+    - name: heading
+      label: Heading
+      type: text
+      required: true
+    -name: subtext
+      label: Subtext
+      type: text
+    - name: buttonText
+      label: Button Text
+      type: text
