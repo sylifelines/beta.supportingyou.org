@@ -1,10 +1,11 @@
 settings:
   content:
     merge: true
-components:
-  hero:
+content:
+  - name: hero
     label: Hero Section
-    type: object
+    path: src/data/hero.json
+    type: file
     fields:
       - name: heading
         label: Heading
@@ -16,9 +17,10 @@ components:
       - name: buttonText
         label: Button Text
         type: text
-  communityHelp:
+  - name: communityHelp
     label: Community Help Section
-    type: object
+    path: src/data/whatToDo.json
+    type: file
     fields:
       - name: heading
         label: Heading
@@ -27,9 +29,10 @@ components:
       - name: subheading
         label: Sub Heading
         type: text
-  communityBenefit:
+  - name: communityBenefit
     label: Community Benefit Section
-    type: object
+    path: src/data/lifelines.json
+    type: file
     fields:
       - name: heading
         label: Heading
@@ -38,9 +41,10 @@ components:
       - name: subheading
         label: Sub Heading
         type: text
-  businessBenefit:
+  - name: businessBenefit
     label: Business Benefit Section
-    type: object
+    path: src/data/businessBenefits.json
+    type: file
     fields:
       - name: heading
         label: Heading
@@ -49,9 +53,10 @@ components:
       - name: subheading
         label: Sub Heading
         type: text
-  whatNext:
+  - name: whatNext
     label: Wht Next Section
-    type: object
+    path: scr/data/whatNext.json
+    type: file
     fields:
       - name: heading
         label: Heading
