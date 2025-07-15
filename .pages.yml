@@ -23,6 +23,7 @@ content:
     label: Community Help Section
     path: src/data/whatToDo.json
     type: file
+    format: json
     fields:
       - name: heading
         label: Heading
