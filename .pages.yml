@@ -84,3 +84,9 @@ content:
       - name: subheading
         label: Sub Heading
         type: string
+      - name: items
+        label: What Next Items
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
