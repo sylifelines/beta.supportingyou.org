@@ -6,7 +6,7 @@ content:
   - name: heroSection
     type: file
     label: Hero Section
-    path: src/sections/HeroSection.astro
+    path: src/data/hero.json
     fields:
       - name: heading
         label: Heading
