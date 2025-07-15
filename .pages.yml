@@ -6,22 +6,7 @@ content:
   - name: heroSection
     type: file
     label: Hero Section
-    path: src/sections/HeroSection.astro
-    fields:
-      - name: heading
-        label: Heading
-        type: text
-        required: true
-      - name:  subheading
-        label: Sub Heading
-        type: text
-      - name: buttonText
-        label: Button Text
-        type: text
-  - name: hero
-    label: Hero Section
     path: src/data/hero.json
-    type: file
     fields:
       - name: heading
         label: Heading
