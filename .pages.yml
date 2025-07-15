@@ -4,7 +4,7 @@ settings:
 media: src/assets
 content:
   - name: heroSection
-    type: single
+    type: file
     label: Hero Section
     path: src/sections/HeroSection.astro
     fields:
