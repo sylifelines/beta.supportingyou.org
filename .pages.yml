@@ -28,7 +28,7 @@ content:
         type: string
         required: true
       - name: items
-        label: Items
+        label: Ways to Help
         type: object
         list: true
         fields:
@@ -47,7 +47,7 @@ content:
         label: Sub Heading
         type: string
       - name: items
-        label: Items
+        label: Lifelines
         type: object
         list: true
         fields:
@@ -65,6 +65,13 @@ content:
       - name: subheading
         label: Sub Heading
         type: string
+      - name: items
+        label: Business Benefits
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: string }
   - name: whatNext
     label: What Next Section
     path: src/data/whatNext.json
