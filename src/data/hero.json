@@ -1,5 +1,13 @@
 {
   "heading": "The community built on kindness",
   "subheading": "Lorem ipsum dolor sit amet consectetur. Fringilla aliquam in arcu tempor viverra. Non donec lorem risus consectetur dui sit.",
-  "buttonText": "Register now"
+  "buttonText": "Register now",
+  "wtds": {
+    "items": [
+      {
+        "icon": "sausage",
+        "title": "For tea"
+      }
+    ]
+  }
 }
