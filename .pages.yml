@@ -37,6 +37,13 @@ content:
       - name: subheading
         label: Sub Heading
         type: text
+      - name: items
+        label: Lifelines
+        type: object
+        list: true
+        fields:
+          - { name: icon, label: Icon, type: string }
+          - { name: title, label: Title, type: string }
   - name: communityBenefit
     label: Community Benefit Section
     path: src/data/lifelines.json

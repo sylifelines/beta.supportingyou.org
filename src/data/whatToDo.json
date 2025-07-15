@@ -2,22 +2,18 @@
   "heading": "What can your business do to help our community?",
   "items": [
     {
-      "id": 0,
       "icon": "material-symbols:network-node",
       "title": "Join the business network through membership by contributing £250"
     },
     {
-      "id": 1,
       "icon": "material-symbols:emoji-people-rounded",
       "title": "Offer entrepreneurial skills and ideas to the Supporting You Group through networking"
     },
     {
-      "id": 2,
       "icon": "material-symbols:voice-chat-outline-rounded",
       "title": "Be a voice for Fund Allocation"
     },
     {
-      "id": 3,
       "icon": "material-symbols:kid-star-outline",
       "title": "Become part of an established, non-profit, Social Enterprise where the focus is people and kindness"
     }

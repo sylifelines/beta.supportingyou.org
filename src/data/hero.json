@@ -1,23 +1,5 @@
 {
   "heading": "The community built on kindness",
   "subheading": "Lorem ipsum dolor sit amet consectetur. Fringilla aliquam in arcu tempor viverra. Non donec lorem risus consectetur dui sit.",
-  "buttonText": "Register now",
-  "items": [
-    {
-      "icon": "material-symbols:network-node",
-      "title": "Join the business network through membership by contributing £250"
-    },
-    {
-      "icon": "material-symbols:emoji-people-rounded",
-      "title": "Offer entrepreneurial skills and ideas to the Supporting You Group through networking"
-    },
-    {
-      "icon": "material-symbols:voice-chat-outline-rounded",
-      "title": "Be a voice for Fund Allocation"
-    },
-    {
-      "icon": "material-symbols:kid-star-outline",
-      "title": "Become part of an established, non-profit, Social Enterprise where the focus is people and kindness"
-    }
-  ]
+  "buttonText": "Register now"
 }
