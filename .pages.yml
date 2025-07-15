@@ -4,14 +4,15 @@ settings:
 media: src/assets
 content:
   - name: heroSection
-    type: file
+    format: json
     label: Hero Section
     path: src/data/hero.json
+    type: file
     fields:
       - name: heading
         label: Heading
-        type: string
         required: true
+        type: string
       - name:  subheading
         label: Sub Heading
         type: string
@@ -19,74 +20,78 @@ content:
         label: Button Text
         type: string
   - name: communityHelp
+    format: json
     label: Community Help Section
     path: src/data/whatToDo.json
     type: file
     fields:
       - name: heading
         label: Heading
-        type: string
         required: true
+        type: string
       - name: items
         label: Ways to Help
-        type: object
         list: true
+        type: object
         fields:
           - { name: icon, label: Icon, type: string }
           - { name: title, label: Title, type: string }
   - name: communityBenefit
+    format: json
     label: Community Benefit Section
     path: src/data/communityBenefits.json
     type: file
     fields:
       - name: heading
         label: Heading
-        type: string
         required: true
+        type: string
       - name: subheading
         label: Sub Heading
         type: string
       - name: items
         label: Lifelines
-        type: object
         list: true
+        type: object
         fields:
           - { name: title, label: Title, type: string }
           - { name: description, label: Description, type: string }
   - name: businessBenefit
+    format: json
     label: Business Benefit Section
     path: src/data/businessBenefits.json
     type: file
     fields:
       - name: heading
         label: Heading
-        type: string
         required: true
+        type: string
       - name: subheading
         label: Sub Heading
         type: string
       - name: items
         label: Business Benefits
-        type: object
         list: true
+        type: object
         fields:
           - { name: title, label: Title, type: string }
           - { name: description, label: Description, type: string }
   - name: whatNext
+    format: json
     label: What Next Section
     path: src/data/whatNext.json
     type: file
     fields:
       - name: heading
         label: Heading
-        type: string
         required: true
+        type: string
       - name: subheading
         label: Sub Heading
         type: string
       - name: items
         label: What Next Items
-        type: object
         list: true
+        type: object
         fields:
           - { name: text, label: Text, type: string }
