@@ -18,6 +18,18 @@ content:
       - name: buttonText
         label: Button Text
         type: text
+      - name: wtds
+        label: What To Dos
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - name: items
+            label: What To Dos
+            type: object
+            list: true
+            fields:
+              - { name: icon, label: Icon, type: string }
+              - { name: title, label: Title, type: string }
   - name: communityHelp
     label: Community Help Section
     path: src/data/whatToDo.json
