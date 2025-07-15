@@ -90,3 +90,10 @@ content:
         list: true
         fields:
           - { name: text, label: Text, type: string }
+  - name: icons
+    format: raw
+    label: Icons
+    path: src/data/icons.ts
+    type: file
+    fields:
+      - { name: icon, type: string }
