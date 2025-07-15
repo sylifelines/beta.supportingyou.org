@@ -1,6 +1,7 @@
 {
   "heading": "What can I do next to get involved?",
   "subheading": "Lorem ipsum dolor sit amet consectetur. Fringilla aliquam in arcu  tempor viverra. Lorem ipsum dolor sit amet consectetur. Fringilla aliquam in arcu tempor viverra.",
+  "buttonText": "Get in touch",
   "items": [
     {
       "text": "Speak to your SY Independent Contributor now"
@@ -14,6 +15,5 @@
     {
       "text": "Complete our Fact Find page online"
     }
-  ],
-  "buttonText": "Get in touch"
+  ]
 }

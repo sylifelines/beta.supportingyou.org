@@ -1,0 +1,31 @@
+{
+  "heading": "How will your  community benefit?",
+  "subheading": "Lorem ipsum dolor sit amet consectetur. Fringilla aliquam in arcu tempor viverra.",
+  "items": [
+    {
+      "title": "Community Lifeline",
+      "description": "supplying iPads (with 1:1 training) for the elderly"
+    },
+    {
+      "title": "Food Lifeline",
+      "description": "Lorem ipsum"
+    },
+    {
+      "title": "Mental Wellbeing Lifeline",
+      "description": "Lorem ipsum"
+    },
+    {
+      "title": "Learning Lifeline",
+      "description": "Lorem ipsum"
+    },
+    {
+      "title": "Facing Loss Lifeline",
+      "description": "Lorem ipsum"
+    },
+    {
+      "title": "Supporting up and coming sport stars",
+      "description": "Lorem ipsum"
+    }
+  ],
+  "buttonText": "Find out more"
+}

@@ -1,62 +1,92 @@
 settings:
   content:
     merge: true
-components:
-  hero:
+media: src/assets
+content:
+  - name: heroSection
+    type: file
     label: Hero Section
-    type: object
+    path: src/data/hero.json
     fields:
       - name: heading
         label: Heading
-        type: text
+        type: string
         required: true
       - name:  subheading
         label: Sub Heading
-        type: text
+        type: string
       - name: buttonText
         label: Button Text
-        type: text
-  communityHelp:
+        type: string
+  - name: communityHelp
     label: Community Help Section
-    type: object
+    path: src/data/whatToDo.json
+    type: file
     fields:
       - name: heading
         label: Heading
-        type: text
+        type: string
         required: true
-      - name: subheading
-        label: Sub Heading
-        type: text
-  communityBenefit:
+      - name: items
+        label: Ways to Help
+        type: object
+        list: true
+        fields:
+          - { name: icon, label: Icon, type: string }
+          - { name: title, label: Title, type: string }
+  - name: communityBenefit
     label: Community Benefit Section
-    type: object
+    path: src/data/communityBenefits.json
+    type: file
     fields:
       - name: heading
         label: Heading
-        type: text
+        type: string
         required: true
       - name: subheading
         label: Sub Heading
-        type: text
-  businessBenefit:
+        type: string
+      - name: items
+        label: Lifelines
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: string }
+  - name: businessBenefit
     label: Business Benefit Section
-    type: object
+    path: src/data/businessBenefits.json
+    type: file
     fields:
       - name: heading
         label: Heading
-        type: text
+        type: string
         required: true
       - name: subheading
         label: Sub Heading
-        type: text
-  whatNext:
-    label: Wht Next Section
-    type: object
+        type: string
+      - name: items
+        label: Business Benefits
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: string }
+  - name: whatNext
+    label: What Next Section
+    path: src/data/whatNext.json
+    type: file
     fields:
       - name: heading
         label: Heading
-        type: text
+        type: string
         required: true
       - name: subheading
         label: Sub Heading
-        type: text
+        type: string
+      - name: items
+        label: What Next Items
+        type: object
+        list: true
+        fields:
+          - { name: text, label: Text, type: string }
