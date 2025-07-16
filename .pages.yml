@@ -103,4 +103,4 @@ content:
     path: src/data/icons.ts
     type: file
     fields:
-      - { name: icon, type: string }
+      - { name: icon, type: string, list: true }
