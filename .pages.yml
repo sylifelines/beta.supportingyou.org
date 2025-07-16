@@ -35,7 +35,11 @@ content:
         list: true
         type: object
         fields:
-          - { name: icon, label: Icon, type: string }
+          - name: icon
+            label: Icon
+            type: reference
+            options:
+              collection: icons
           - { name: title, label: Title, type: string }
   - name: communityBenefit
     format: json
