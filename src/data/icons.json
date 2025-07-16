@@ -1,6 +1,12 @@
 {
   "icons": [
-    "sausages",
-    "beans"
+    "menu-rounded",
+    "account-circle-outline",
+    "shopping-cart-outline",
+    "network-node",
+    "emoji-people-rounded",
+    "voice-chat-outline-rounded",
+    "kid-star-outline",
+    "check-box-outline-rounded"
   ]
 }
