@@ -98,7 +98,7 @@ content:
         fields:
           - { name: text, label: Text, type: string }
   - name: icons
-    format: raw
+    format: json
     label: Icons
     path: src/data/icons.json
     type: file
