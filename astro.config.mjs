@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
-
+import { icons } from './src/data/icons.json';
 import icon from "astro-icon";
 
 import tailwindcss from "@tailwindcss/vite";
@@ -13,16 +13,7 @@ export default defineConfig({
         icon({
             include: {
                 // Include only required stash icons in the bundle
-                "material-symbols": [
-                    "menu-rounded",
-                    "account-circle-outline",
-                    "shopping-cart-outline",
-                    "network-node",
-                    "emoji-people-rounded",
-                    "voice-chat-outline-rounded",
-                    "kid-star-outline",
-                    "check-box-outline-rounded",
-                ],
+                "material-symbols": icons,
                 // Include all `uis` icons
                 // uis: ['*']
             },

@@ -103,4 +103,4 @@ content:
     path: src/data/icons.json
     type: file
     fields:
-      - { name: icon, type: string, list: true }
+      - { name: icons, type: string, list: true }
