@@ -100,7 +100,7 @@ content:
   - name: icons
     format: raw
     label: Icons
-    path: src/data/icons.ts
+    path: src/data/icons.json
     type: file
     fields:
       - { name: icon, type: string, list: true }
