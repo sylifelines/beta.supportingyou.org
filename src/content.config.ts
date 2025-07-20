@@ -9,8 +9,4 @@ const whatToDos = defineCollection({
   }),
 });
 
-const wtds = defineCollection({
-  loader: file("src/data/wtds.json"),
-});
-
-export const collections = { wtds, whatToDos };
+export const collections = { whatToDos };

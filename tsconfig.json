@@ -3,20 +3,42 @@
   "compilerOptions": {
     "baseUrl": "src",
     "strictNullChecks": true,
-    "types": [ "astro/client" ],
+    "types": [
+      "astro/client"
+    ],
     "paths": {
-      "@assets/*": [ "assets/*" ],
-      "@components/*": [ "components/*" ],
-      "@data/*": [ "data/*" ],
-      "@icons/*": [ "icons/*" ],
-      "@layouts/*": [ "layouts/*" ],
-      "@pages/*": [ "pages/*" ],
-      "@sections/*": [ "sections/*" ],
-      "@styles/*": [ "styles/*" ]
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@data/*": [
+        "data/*"
+      ],
+      "@icons/*": [
+        "icons/*"
+      ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@sections/*": [
+        "sections/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ]
     },
     "plugins": [
-      { "name": "@astrojs/ts-plugin" }
-    ]
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   },
   "include": [
     ".astro/types.d.ts",

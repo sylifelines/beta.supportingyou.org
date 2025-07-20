@@ -1,6 +1,7 @@
 {
-  "heading": "How will your  community benefit?",
-  "subheading": "Lorem ipsum dolor sit amet consectetur. Fringilla aliquam in arcu tempor viverra.",
+  "heading": "How will your community benefit?",
+  "subheading": "Bacon ipsum dolor amet chuck meatloaf porchetta pastrami capicola short ribs. Capicola picanha kevin ground round pork chop pork loin beef ribs rump leberkas chuck alcatra shankle spare ribs.",
+  "buttonText": "Find out more",
   "items": [
     {
       "title": "Community Lifeline",
@@ -26,6 +27,5 @@
       "title": "Supporting up and coming sport stars",
       "description": "Lorem ipsum"
     }
-  ],
-  "buttonText": "Find out more"
+  ]
 }
