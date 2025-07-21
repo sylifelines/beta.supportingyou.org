@@ -1,5 +1,9 @@
-// keystatic.config.ts
 import { config, fields, singleton } from "@keystatic/core";
+
+import icons from "./src/data/icons.json";
+const {
+  icons: { "material-symbols": materialSymbols },
+} = icons;
 
 export default config({
   storage: {
@@ -41,6 +45,28 @@ export default config({
         ),
       },
     }), // community end
+    whatToDo: singleton({
+      label: "What to Do Section",
+      path: "src/data/whatToDo",
+      format: "json",
+      schema: {
+        heading: fields.text({ label: "Heading" }),
+        items: fields.array(
+          fields.object({
+            icon: fields.select({
+              label: "Icon",
+              description: "The material symbol to use for this item",
+              options: materialSymbols.map((i) => ({
+                label: i,
+                value: `material-symbols:${i}`,
+              })),
+              defaultValue: `material-symbols:${materialSymbols[0]}`,
+            }),
+            title: fields.text({ label: "Title" }),
+          }),
+        ),
+      },
+    }),
     icons: singleton({
       label: "Icons",
       path: "./src/data/icons",
