@@ -2,6 +2,7 @@
 import { defineConfig, fontProviders } from "astro/config";
 
 import icon from "astro-icon";
+import icons from "./src/data/icons.json";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -15,21 +16,7 @@ import keystatic from '@keystatic/astro';
 // https://astro.build/config
 export default defineConfig({
     integrations: [icon({
-        include: {
-            // Include only required stash icons in the bundle
-            "material-symbols": [
-                "menu-rounded",
-                "account-circle-outline",
-                "shopping-cart-outline",
-                "network-node",
-                "emoji-people-rounded",
-                "voice-chat-outline-rounded",
-                "kid-star-outline",
-                "check-box-outline-rounded",
-            ],
-            // Include all `uis` icons
-            // uis: ['*']
-        },
+        include: icons
     }), alpinejs(), react(), markdoc(), keystatic()],
 
     vite: {
