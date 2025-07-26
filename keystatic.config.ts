@@ -8,11 +8,11 @@ const {
 
 export default config({
   storage: {
-    kind: 'local',
-    // kind: 'cloud',
-  },
-  cloud: {
-    project: 'sylifelines/supportingyou',
+    kind: 'github',
+    repo: {
+    owner: 'sylifelines',
+    name: 'beta.supportingyou.org'
+    }
   },
   singletons: {
     hero: singleton({
