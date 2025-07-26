@@ -13,22 +13,27 @@ import react from "@astrojs/react";
 import markdoc from "@astrojs/markdoc";
 import keystatic from '@keystatic/astro';
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
-    integrations: [icon({
-        include: icons
-    }), alpinejs(), react(), markdoc(), keystatic()],
+  integrations: [icon({
+      include: icons
+  }), alpinejs(), react(), markdoc(), keystatic()],
 
-    vite: {
-        plugins: [tailwindcss()],
-    },
-    experimental: {
-        fonts: [
-            {
-                provider: fontProviders.google(),
-                name: "Quicksand",
-                cssVariable: "--font-quicksand",
-            },
-        ],
-    },
+  vite: {
+      plugins: [tailwindcss()],
+  },
+
+  experimental: {
+      fonts: [
+          {
+              provider: fontProviders.google(),
+              name: "Quicksand",
+              cssVariable: "--font-quicksand",
+          },
+      ],
+  },
+
+  adapter: cloudflare(),
 });
