@@ -1,7 +1,13 @@
 {
     "name": "supporting-you-2025",
+    "main": "./dist/_worker.js/index.js",
     "compatibility_date": "2025-07-01",
+    "compatibility_flags": ["nodejs_compat"],
     "assets": {
+        "binding": "ASSETS",
         "directory": "./dist"
+    },
+    "observability": {
+        "enabled": true
     }
 }
