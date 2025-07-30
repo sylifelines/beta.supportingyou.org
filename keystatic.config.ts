@@ -10,8 +10,8 @@ export default config({
   storage: {
     kind: 'github',
     repo: {
-    owner: 'sylifelines',
-    name: 'beta.supportingyou.org'
+      owner: 'sylifelines',
+      name: 'beta.supportingyou.org'
     }
   },
   singletons: {
@@ -67,9 +67,9 @@ export default config({
             id: fields.text({ label: "Automatic ID - JUST IGNORE", defaultValue: nanoid() }),
           }),
           {
-              label: "What To Dos",
-              slugField: "id",
-              itemLabel: props => props.fields.title.value,
+            label: "What To Dos",
+            slugField: "id",
+            itemLabel: props => props.fields.title.value,
           }
         ),
       },
@@ -87,9 +87,9 @@ export default config({
             description: fields.text({ label: "Description" }),
           }),
           {
-              label: "Benefits",
-              slugField: "title",
-              itemLabel: props => props.fields.title.value,
+            label: "Benefits",
+            slugField: "title",
+            itemLabel: props => props.fields.title.value,
           }
         ),
       },
@@ -107,9 +107,9 @@ export default config({
             text: fields.text({ label: "Title" }),
           }),
           {
-              label: "Benefits",
-              slugField: "text",
-              itemLabel: props => props.fields.text.value,
+            label: "Benefits",
+            slugField: "text",
+            itemLabel: props => props.fields.text.value,
           }
         ),
       },

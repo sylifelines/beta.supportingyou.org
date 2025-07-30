@@ -18,21 +18,21 @@ import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
   integrations: [icon({
-      include: icons
+    include: icons
   }), alpinejs(), react(), markdoc(), keystatic()],
 
   vite: {
-      plugins: [tailwindcss()],
+    plugins: [tailwindcss()],
   },
 
   experimental: {
-      fonts: [
-          {
-              provider: fontProviders.google(),
-              name: "Quicksand",
-              cssVariable: "--font-quicksand",
-          },
-      ],
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: "Quicksand",
+        cssVariable: "--font-quicksand",
+      },
+    ],
   },
 
   adapter: cloudflare(),
