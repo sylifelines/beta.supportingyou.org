@@ -9,9 +9,9 @@ import tailwindcss from "@tailwindcss/vite";
 import alpinejs from "@astrojs/alpinejs";
 
 // Requrements for keystatic
-import react from "@astrojs/react";
-import markdoc from "@astrojs/markdoc";
-import keystatic from '@keystatic/astro';
+// import react from "@astrojs/react";
+// import markdoc from "@astrojs/markdoc";
+// import keystatic from '@keystatic/astro';
 
 // import cloudflare from "@astrojs/cloudflare";
 
@@ -20,9 +20,9 @@ export default defineConfig({
   integrations: [icon({
     include: icons
   }), alpinejs()
-    , react()
-    , markdoc()
-    , keystatic()
+    // , react()
+    // , markdoc()
+    // , keystatic()
   ],
 
   vite: {
