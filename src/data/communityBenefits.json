@@ -2,39 +2,39 @@
   "heading": "How will your community benefit?",
   "subheading": "All profits go straight back to helping and supporting those who need us most. We use the money to help fund essential lifeline services, local initiatives, equipment for community projects and we provide manpower to wherever we think we can help make a difference to a good cause. SY regularly contributes to community crowd funding schemes that may need a capital top-up.",
   "buttonText": "Find out more",
-  "items": [
+  "lifelines": [
     {
-      "image": "items/RDNS3f/image.jpg",
+      "image": "lifelines/RDNS3f/image.jpg",
       "title": "Community Lifeline",
       "description": "Supplying older people with iPads and training to get online",
       "id": "RDNS3f"
     },
     {
-      "image": "items/FIxyUh/image.jpg",
+      "image": "lifelines/FIxyUh/image.jpg",
       "title": "Food Lifeline",
       "description": "Helping everybody have enough to eat",
       "id": "FIxyUh"
     },
     {
-      "image": "items/7y6eJw/image.jpg",
+      "image": "lifelines/7y6eJw/image.jpg",
       "title": "Mental Wellbeing Lifeline",
       "description": "Taking positive action in our communities",
       "id": "7y6eJw"
     },
     {
-      "image": "items/bjtpo7/image.jpg",
+      "image": "lifelines/bjtpo7/image.jpg",
       "title": "Learning Lifeline",
       "description": "Bridging the learning gap",
       "id": "bjtpo7"
     },
     {
-      "image": "items/M_D-uV/image.jpg",
+      "image": "lifelines/M_D-uV/image.jpg",
       "title": "Facing Loss Lifeline",
       "description": "Supporting You in times of loss",
       "id": "M_D-uV"
     },
     {
-      "image": "items/qzNdNk/image.jpg",
+      "image": "lifelines/qzNdNk/image.jpg",
       "title": "Aspiring Lifeline",
       "description": "Funding for up and coming star quality talent.",
       "id": "qzNdNk"

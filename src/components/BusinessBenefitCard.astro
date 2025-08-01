@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-const { item, image } = Astro.props;
-const { title, description } = item;
+const { item } = Astro.props;
+const { image, title, description } = item.data;
 ---
 
 <div class="carousel-item">

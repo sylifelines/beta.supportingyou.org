@@ -34,7 +34,7 @@ export default config({
         heading: fields.text({ label: "Heading" }),
         subheading: fields.text({ label: "Sub Heading" }),
         buttonText: fields.text({ label: "Button Text" }),
-        items: fields.array(
+        lifelines: fields.array(
           fields.object({
             image: fields.image({
               label: 'Image',
@@ -87,16 +87,21 @@ export default config({
       schema: {
         heading: fields.text({ label: "Heading" }),
         subheading: fields.text({ label: "Sub Heading" }),
-        items: fields.array(
+        businessBenefits: fields.array(
           fields.object({
+            image: fields.image({
+              label: 'Image',
+              directory: 'src/assets',
+            }),
             title: fields.text({ label: "Title" }),
             description: fields.text({ label: "Description" }),
+            id: fields.text({ label: "Automatic ID - JUST IGNORE", defaultValue: nanoid(6) }),
           }),
           {
             label: "Benefits",
-            slugField: "title",
+            slugField: "id",
             itemLabel: props => props.fields.title.value,
-          }
+          },
         ),
       },
     }),

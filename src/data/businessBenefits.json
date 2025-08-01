@@ -1,18 +1,26 @@
 {
   "heading": "How will your  business benefit?",
   "subheading": "Gain prosperous new customers, generated through our growing Business Community & IC Network.",
-  "items": [
+  "businessBenefits": [
     {
-      "title": "Become part of a local and active Networking Group"
+      "image": "businessBenefits/lO7RDF/image.jpg",
+      "title": "Become part of a local and active Networking Group",
+      "id": "lO7RDF"
     },
     {
-      "title": "Choose your level of involvement"
+      "image": "businessBenefits/9LqPrO/image.jpg",
+      "title": "Choose your level of involvement",
+      "id": "9LqPrO"
     },
     {
-      "title": "Raise your company profile"
+      "image": "businessBenefits/bwggqv/image.png",
+      "title": "Raise your company profile",
+      "id": "bwggqv"
     },
     {
-      "title": "Receive free advertising on Social Media and throughout the SY Network."
+      "image": "businessBenefits/Xesoim/image.jpg",
+      "title": "Receive free advertising on Social Media and throughout the SY Network.",
+      "id": "Xesoim"
     }
   ]
 }
