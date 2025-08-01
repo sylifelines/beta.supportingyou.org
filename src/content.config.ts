@@ -1,5 +1,13 @@
 import { defineCollection, z } from 'astro:content';
 import { file } from 'astro/loaders';
+
+type Lifeline = {
+  image: string;
+  title: string;
+  description: string;
+  id: string;
+}
+
 const whatToDos = defineCollection({
   loader: file("src/data/whatToDo.json", { parser: (text) => JSON.parse(text).items }),
   schema: z.object({
@@ -10,7 +18,12 @@ const whatToDos = defineCollection({
 
 
 const lifelines = defineCollection({
-  loader: file("src/data/communityBenefits.json", { parser: (text) => JSON.parse(text).items }),
+  loader: file("src/data/communityBenefits.json", {
+    parser: (text) => {
+      let items = JSON.parse(text).items
+      return items.map((item: Lifeline) => ({ ...item, image: `@assets/${item.image}` }))
+    }
+  }),
   schema: ({ image }) => z.object({
     id: z.string(),
     image: z.nullable(image()),

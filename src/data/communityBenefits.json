@@ -4,37 +4,37 @@
   "buttonText": "Find out more",
   "items": [
     {
-      "image": "@assets/items/RDNS3f/image.jpg",
+      "image": "items/RDNS3f/image.jpg",
       "title": "Community Lifeline",
       "description": "Supplying older people with iPads and training to get online",
       "id": "RDNS3f"
     },
     {
-      "image": "@assets/items/FIxyUh/image.jpg",
+      "image": "items/FIxyUh/image.jpg",
       "title": "Food Lifeline",
       "description": "Helping everybody have enough to eat",
       "id": "FIxyUh"
     },
     {
-      "image": "@assets/items/7y6eJw/image.jpg",
+      "image": "items/7y6eJw/image.jpg",
       "title": "Mental Wellbeing Lifeline",
       "description": "Taking positive action in our communities",
       "id": "7y6eJw"
     },
     {
-      "image": "@assets/items/bjtpo7/image.jpg",
+      "image": "items/bjtpo7/image.jpg",
       "title": "Learning Lifeline",
       "description": "Bridging the learning gap",
       "id": "bjtpo7"
     },
     {
-      "image": "@assets/items/M_D-uV/image.jpg",
+      "image": "items/M_D-uV/image.jpg",
       "title": "Facing Loss Lifeline",
       "description": "Supporting You in times of loss",
       "id": "M_D-uV"
     },
     {
-      "image": "@assets/items/qzNdNk/image.jpg",
+      "image": "items/qzNdNk/image.jpg",
       "title": "Aspiring Lifeline",
       "description": "Funding for up and coming star quality talent.",
       "id": "qzNdNk"
