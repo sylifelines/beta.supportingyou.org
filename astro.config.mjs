@@ -13,13 +13,17 @@ import react from "@astrojs/react";
 import markdoc from "@astrojs/markdoc";
 import keystatic from '@keystatic/astro';
 
-import cloudflare from "@astrojs/cloudflare";
+// import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [icon({
     include: icons
-  }), alpinejs(), react(), markdoc(), keystatic()],
+  }), alpinejs()
+    , react()
+    , markdoc()
+    , keystatic()
+  ],
 
   vite: {
     plugins: [tailwindcss()],
@@ -35,5 +39,5 @@ export default defineConfig({
     ],
   },
 
-  adapter: cloudflare(),
+  // adapter: cloudflare(),
 });

@@ -1,31 +1,43 @@
 {
   "heading": "How will your community benefit?",
-  "subheading": "Bacon ipsum dolor amet chuck meatloaf porchetta pastrami capicola short ribs. Capicola picanha kevin ground round pork chop pork loin beef ribs rump leberkas chuck alcatra shankle spare ribs.",
+  "subheading": "All profits go straight back to helping and supporting those who need us most. We use the money to help fund essential lifeline services, local initiatives, equipment for community projects and we provide manpower to wherever we think we can help make a difference to a good cause. SY regularly contributes to community crowd funding schemes that may need a capital top-up.",
   "buttonText": "Find out more",
   "items": [
     {
+      "image": "@assets/items/RDNS3f/image.jpg",
       "title": "Community Lifeline",
-      "description": "supplying iPads (with 1:1 training) for the elderly"
+      "description": "Supplying older people with iPads and training to get online",
+      "id": "RDNS3f"
     },
     {
+      "image": "@assets/items/FIxyUh/image.jpg",
       "title": "Food Lifeline",
-      "description": "Lorem ipsum"
+      "description": "Helping everybody have enough to eat",
+      "id": "FIxyUh"
     },
     {
+      "image": "@assets/items/7y6eJw/image.jpg",
       "title": "Mental Wellbeing Lifeline",
-      "description": "Lorem ipsum"
+      "description": "Taking positive action in our communities",
+      "id": "7y6eJw"
     },
     {
+      "image": "@assets/items/bjtpo7/image.jpg",
       "title": "Learning Lifeline",
-      "description": "Lorem ipsum"
+      "description": "Bridging the learning gap",
+      "id": "bjtpo7"
     },
     {
+      "image": "@assets/items/M_D-uV/image.jpg",
       "title": "Facing Loss Lifeline",
-      "description": "Lorem ipsum"
+      "description": "Supporting You in times of loss",
+      "id": "M_D-uV"
     },
     {
-      "title": "Supporting up and coming sport stars",
-      "description": "Lorem ipsum"
+      "image": "@assets/items/qzNdNk/image.jpg",
+      "title": "Aspiring Lifeline",
+      "description": "Funding for up and coming star quality talent.",
+      "id": "qzNdNk"
     }
   ]
 }

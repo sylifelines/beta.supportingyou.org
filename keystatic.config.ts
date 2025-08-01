@@ -8,11 +8,12 @@ const {
 
 export default config({
   storage: {
-    kind: 'github',
-    repo: {
-      owner: 'sylifelines',
-      name: 'beta.supportingyou.org'
-    }
+    kind: 'local',
+    // kind: 'github',
+    // repo: {
+    //   owner: 'sylifelines',
+    //   name: 'beta.supportingyou.org'
+    // }
   },
   singletons: {
     hero: singleton({
@@ -35,12 +36,17 @@ export default config({
         buttonText: fields.text({ label: "Button Text" }),
         items: fields.array(
           fields.object({
+            image: fields.image({
+              label: 'Image',
+              directory: 'src/assets',
+            }),
             title: fields.text({ label: "Title" }),
             description: fields.text({ label: "Description" }),
+            id: fields.text({ label: "Automatic ID - JUST IGNORE", defaultValue: nanoid(6) }),
           }),
           {
             label: "Lifelines",
-            slugField: "title",
+            slugField: "id",
             itemLabel: props => props.fields.title.value,
           },
         ),
