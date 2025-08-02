@@ -9,24 +9,36 @@ const { image, title, description } = item.data;
 >
   {
     (
-      <dt>
+      <dt class="lg:hidden">
         {image && (
-        <Image
-          src={image}
-          alt={title}
-          width={310}
-          height={184}
-          loading="lazy"
-          class="rounded-box h-[184px] w-[310px] object-cover"
-        />
+          <Image
+            src={image}
+            alt={title}
+            width={310}
+            height={184}
+            loading="lazy"
+            class="rounded-box h-[184px] w-[310px] object-cover"
+          />
+        )}
+      </dt>
+      <dt class="hidden lg:block">
+        {image && (
+          <Image
+            src={image}
+            alt={title}
+            width={336}
+            height={288}
+            loading="lazy"
+            class="rounded-box h-[288px] w-[336px] object-cover"
+          />
         )}
       </dt>
     )
   }
-  <dd class="text-syslate text-2xl/8 font-bold">
+  <dd class="text-syslate my-6 text-2xl/8 font-bold">
     {title}
   </dd>
-  <dd class="text-syslate mt-3 text-base/5 font-semibold">
+  <dd class="text-syslate mx-16 text-base/5 font-semibold">
     {description}
   </dd>
 </div>
