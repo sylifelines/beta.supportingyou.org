@@ -10,7 +10,7 @@ const { image, title, description } = item.data;
   {
     (
       <dt>
-        image && (
+        {image && (
         <Image
           src={image}
           alt={title}
@@ -19,7 +19,7 @@ const { image, title, description } = item.data;
           loading="lazy"
           class="rounded-box h-[184px] w-[310px] object-cover"
         />
-        )
+        )}
       </dt>
     )
   }
