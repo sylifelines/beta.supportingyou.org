@@ -1,0 +1,19 @@
+{
+  "socialLinks": [
+    {
+      "icon": "fa7-brands:facebook",
+      "name": "Facebook",
+      "url": "https://facebook.com/"
+    },
+    {
+      "icon": "fa7-brands:instagram",
+      "name": "Instagram",
+      "url": "https://instagram.com/"
+    },
+    {
+      "icon": "fa7-brands:linkedin",
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/"
+    }
+  ]
+}

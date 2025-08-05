@@ -1,27 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-const navLinks = [
-  {
-    icon: "",
-    name: "Business Network",
-    url: "#",
-  },
-  {
-    icon: "",
-    name: "Register",
-    url: "#",
-  },
-  {
-    icon: "material-symbols:shopping-cart-outline",
-    name: "Shop",
-    url: "#",
-  },
-  {
-    icon: "material-symbols:account-circle-outline",
-    name: "Login",
-    url: "#",
-  },
-];
+import { navLinks } from "../data/navLinks.json";
 ---
 
 <header x-data="{ open: false }">
@@ -51,7 +30,7 @@ const navLinks = [
         {
           navLinks.map((link) => (
             <a href={link.url} class="text-xl font-semibold text-white">
-              <div class="flex items-center">
+              <div class="flex items-center gap-1">
                 {link.icon && <Icon name={link.icon} width={25} height={25} />}{" "}
                 {link.name}
               </div>

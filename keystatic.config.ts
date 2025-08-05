@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import icons from "./src/data/icons.json";
 
 const {
-  icons: { "material-symbols": materialSymbols },
+  icons: { "material-symbols": materialSymbols, "fa7-brands": fontAwesome },
 } = icons;
 
 export default config({
@@ -137,6 +137,15 @@ export default config({
             {
               label: "Material Icons for use on the site",
               description: "[Material Icons](https://icon-sets.iconify.design/material-symbols/)",
+              itemLabel: props => props.value,
+            },
+          ),
+          "fa7-brands": fields.array(
+            fields.text({ label: "Tag" }),
+            // Labelling options
+            {
+              label: "Fontawesome brands for use on the site",
+              description: "[Material Icons](https://icon-sets.iconify.design/fa7-brands/)",
               itemLabel: props => props.value,
             },
           ),

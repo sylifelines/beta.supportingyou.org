@@ -1,0 +1,19 @@
+{
+  "navLinks": [
+    {
+      "icon": "material-symbols:export-notes-outline-rounded",
+      "name": "Register",
+      "url": "https://account.supportingyou.org/store/index.php?route=account/quickregister"
+    },
+    {
+      "icon": "material-symbols:shopping-cart-outline",
+      "name": "Shop",
+      "url": "https://account.supportingyou.org/store/"
+    },
+    {
+      "icon": "material-symbols:account-circle-outline",
+      "name": "Login",
+      "url": "https://account.supportingyou.org/backoffice/login/index/"
+    }
+  ]
+}

@@ -1,19 +1,54 @@
+---
+const year = new Date().getFullYear();
+import { Icon } from "astro-icon/components";
+import { navLinks } from "../data/navLinks.json";
+import { socialLinks } from "../data/socialLinks.json";
+---
+
 <div
-  class="w-full overflow-hidden -mt-15 h-40 md:-mt-20 md:h-60 lg:-mt-30 lg:h-80"
+  class="-mt-15 h-40 w-full overflow-hidden md:-mt-20 md:h-60 lg:-mt-30 lg:h-80"
 >
   <div
-    class="border
-    rounded-t-[50%]
-    mb-24
-    border-syslate
-    bg-syslate
-    translate-y-1/2
-    h-40
-    md:h-60
-    lg:h-80
-    scale-120
-    -z-10"
+    class="border-syslate bg-syslate -z-10 mb-24 h-40 translate-y-1/2 scale-120 rounded-t-[50%] border md:h-60 lg:h-80"
   >
   </div>
 </div>
-<div class="h-100 bg-syslate">&nbsp;</div>
+<div class="bg-syslate h-100">
+  <footer class="bg-syslate">
+    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+      <nav
+        aria-label="Footer"
+        class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6"
+      >
+        {
+          navLinks.map((link) => (
+            <a href={link.url} class="text-gray-400 hover:text-white">
+              <div class="flex items-center gap-1">
+                {link.icon && <Icon name={link.icon} width={25} height={25} />}{" "}
+                {link.name}
+              </div>
+            </a>
+          ))
+        }
+      </nav>
+      <div class="mt-16 flex justify-center gap-x-10">
+        {
+          socialLinks.map((link) => (
+            <a href={link.url} class="text-gray-400 hover:text-white">
+              <div class="flex items-center gap-1">
+                {link.icon && <Icon name={link.icon} width={25} height={25} />}
+              </div>
+            </a>
+          ))
+        }
+      </div>
+      <p class="mt-10 text-center text-sm/6 text-gray-400">
+        &copy;<span id="footer-year">{year}</span> Supporting You (Lifelines Ltd).
+        All rights reserved.
+      </p>
+    </div>
+  </footer>
+</div>
+<script is:inline>
+  document.getElementById("footer-year").innerText = new Date().getFullYear();
+</script>

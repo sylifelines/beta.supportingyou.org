@@ -8,7 +8,13 @@
       "emoji-people-rounded",
       "voice-chat-outline-rounded",
       "kid-star-outline",
-      "check-box-outline-rounded"
+      "check-box-outline-rounded",
+      "export-notes-outline-rounded"
+    ],
+    "fa7-brands": [
+      "facebook",
+      "linkedin",
+      "instagram"
     ]
   }
 }

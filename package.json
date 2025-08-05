@@ -15,6 +15,7 @@
     "@astrojs/alpinejs": "^0.4.8",
     "@astrojs/markdoc": "^0.15.1",
     "@astrojs/react": "^4.3.0",
+    "@iconify-json/fa7-brands": "^1.2.0",
     "@iconify-json/material-symbols": "^1.2.25",
     "@keystatic/astro": "^5.0.6",
     "@keystatic/core": "^0.5.47",
