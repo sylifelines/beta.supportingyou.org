@@ -29,7 +29,10 @@ import { navLinks } from "../data/navLinks.json";
       <div class="hidden items-center lg:flex lg:gap-x-12">
         {
           navLinks.map((link) => (
-            <a href={link.url} class="text-xl font-semibold text-white">
+            <a
+              href={link.url}
+              class="hover:text-syyellow text-xl font-semibold text-white"
+            >
               <div class="flex items-center gap-1">
                 {link.icon && <Icon name={link.icon} width={25} height={25} />}{" "}
                 {link.name}
