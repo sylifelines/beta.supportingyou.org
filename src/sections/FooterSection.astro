@@ -15,40 +15,70 @@ import { socialLinks } from "../data/socialLinks.json";
 </div>
 <div class="bg-syslate h-100">
   <footer class="bg-syslate">
-    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+    <div
+      class="mx-auto flex max-w-7xl flex-col overflow-hidden px-6 py-20 sm:py-24 lg:px-8"
+    >
       <nav
         aria-label="Footer"
-        class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6"
+        class="-mb-6 flex flex-col items-center justify-center gap-x-12 gap-y-3 text-sm/6 lg:flex-row lg:justify-start"
       >
-        {
-          navLinks.map((link) => (
-            <a href={link.url} class="text-gray-400 hover:text-white">
-              <div class="flex items-center gap-1">
-                {link.icon && <Icon name={link.icon} width={25} height={25} />}{" "}
-                {link.name}
-              </div>
-            </a>
-          ))
-        }
+        <div class="flex flex-row gap-6">
+          <Icon name="logo_1" width={152} height={83} />
+          <Icon name="logo_bn" width={146} height={83} />
+        </div>
+        <div class="flex gap-6">
+          {
+            navLinks.map((link) => (
+              <a href={link.url} class="hover:text-syyellow text-white">
+                <div class="flex items-center gap-1">
+                  {link.icon && (
+                    <Icon name={link.icon} width={25} height={25} />
+                  )}{" "}
+                  {link.name}
+                </div>
+              </a>
+            ))
+          }
+        </div>
       </nav>
-      <div class="mt-16 flex justify-center gap-x-10">
-        {
-          socialLinks.map((link) => (
-            <a href={link.url} class="text-gray-400 hover:text-white">
-              <div class="flex items-center gap-1">
-                {link.icon && <Icon name={link.icon} width={25} height={25} />}
-              </div>
-            </a>
-          ))
-        }
+      <div
+        class="mt-16 flex flex-col items-center justify-center gap-y-6 lg:items-start"
+      >
+        <div>Follow us</div>
+        <div class="flex gap-6">
+          {
+            socialLinks.map((link) => (
+              <a href={link.url} class="hover:text-syyellow text-white">
+                <div class="flex items-center gap-1">
+                  {link.icon && (
+                    <Icon name={link.icon} width={25} height={25} />
+                  )}
+                </div>
+              </a>
+            ))
+          }
+        </div>
+        <div>Contact us</div>
+        <div class="hover:text-syyellow flex gap-1 text-white">
+          <Icon
+            name="material-symbols:mail-outline-rounded"
+            width={25}
+            height={25}
+          />
+          <a href="mailto:info@supportingyou,org">info@supportingyou.org</a>
+        </div>
       </div>
-      <p class="mt-10 text-center text-sm/6 text-gray-400">
-        &copy;<span id="footer-year">{year}</span> Supporting You (Lifelines Ltd).
-        All rights reserved.
-      </p>
+      <div
+        class="mt-4 border-t border-white/10 pt-8 sm:mt-6 lg:mt-8 lg:flex lg:items-center lg:justify-between"
+      >
+        <p class="text/6 text-center text-white lg:text-start">
+          &copy;<span id="footer-year">{year}</span> Supporting You (Lifelines Ltd).
+          All rights reserved.
+        </p>
+      </div>
     </div>
   </footer>
+  <script is:inline>
+    document.getElementById("footer-year").innerText = new Date().getFullYear();
+  </script>
 </div>
-<script is:inline>
-  document.getElementById("footer-year").innerText = new Date().getFullYear();
-</script>
