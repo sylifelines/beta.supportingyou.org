@@ -19,7 +19,11 @@ import BusinessBenefitCard from "@components/BusinessBenefitCard.astro";
     </div>
 
     <div class="carousel carousel-center rounded-box max-w-lvw space-x-4 p-4">
-      {benefits.map((benefit) => <BusinessBenefitCard item={benefit} />)}
+      {
+        benefits.map((benefit, i) => (
+          <BusinessBenefitCard item={benefit} index={i} />
+        ))
+      }
     </div>
   </div>
 </div>
