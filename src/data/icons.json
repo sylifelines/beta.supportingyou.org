@@ -12,10 +12,6 @@
       "export-notes-outline-rounded",
       "mail-outline-rounded"
     ],
-    "fa7-brands": [
-      "facebook",
-      "linkedin",
-      "instagram"
-    ]
+    "fa7-brands": ["facebook", "linkedin", "instagram"]
   }
 }

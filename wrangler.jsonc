@@ -2,6 +2,6 @@
   "name": "supporting-you-2025",
   "compatibility_date": "2025-07-01",
   "assets": {
-    "directory": "./dist"
-  }
+    "directory": "./dist",
+  },
 }
