@@ -1,5 +1,5 @@
 import { config, fields, singleton } from "@keystatic/core";
-import { nanoid } from 'nanoid';
+import { nanoid } from "nanoid";
 import icons from "./src/data/icons.json";
 
 const {
@@ -8,7 +8,7 @@ const {
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: "local",
     // kind: 'github',
     // repo: {
     //   owner: 'sylifelines',
@@ -37,17 +37,24 @@ export default config({
         lifelines: fields.array(
           fields.object({
             image: fields.image({
-              label: 'Image',
-              directory: 'src/assets',
+              label: "Image",
+              directory: "src/assets",
+            }),
+            secondaryImage: fields.image({
+              label: "Secondary Image",
+              directory: "src/assets",
             }),
             title: fields.text({ label: "Title" }),
             description: fields.text({ label: "Description" }),
-            id: fields.text({ label: "Automatic ID - JUST IGNORE", defaultValue: nanoid(6) }),
+            id: fields.text({
+              label: "Automatic ID - JUST IGNORE",
+              defaultValue: nanoid(6),
+            }),
           }),
           {
             label: "Lifelines",
             slugField: "id",
-            itemLabel: props => props.fields.title.value,
+            itemLabel: (props) => props.fields.title.value,
           },
         ),
       },
@@ -70,13 +77,16 @@ export default config({
               defaultValue: `material-symbols:${materialSymbols[0]}`,
             }),
             title: fields.text({ label: "Title" }),
-            id: fields.text({ label: "Automatic ID - JUST IGNORE", defaultValue: nanoid() }),
+            id: fields.text({
+              label: "Automatic ID - JUST IGNORE",
+              defaultValue: nanoid(),
+            }),
           }),
           {
             label: "What To Dos",
             slugField: "id",
-            itemLabel: props => props.fields.title.value,
-          }
+            itemLabel: (props) => props.fields.title.value,
+          },
         ),
       },
     }),
@@ -90,17 +100,20 @@ export default config({
         businessBenefits: fields.array(
           fields.object({
             image: fields.image({
-              label: 'Image',
-              directory: 'src/assets',
+              label: "Image",
+              directory: "src/assets",
             }),
             title: fields.text({ label: "Title" }),
             description: fields.text({ label: "Description" }),
-            id: fields.text({ label: "Automatic ID - JUST IGNORE", defaultValue: nanoid(6) }),
+            id: fields.text({
+              label: "Automatic ID - JUST IGNORE",
+              defaultValue: nanoid(6),
+            }),
           }),
           {
             label: "Benefits",
             slugField: "id",
-            itemLabel: props => props.fields.title.value,
+            itemLabel: (props) => props.fields.title.value,
           },
         ),
       },
@@ -120,8 +133,8 @@ export default config({
           {
             label: "Benefits",
             slugField: "text",
-            itemLabel: props => props.fields.text.value,
-          }
+            itemLabel: (props) => props.fields.text.value,
+          },
         ),
       },
     }),
@@ -136,8 +149,9 @@ export default config({
             // Labelling options
             {
               label: "Material Icons for use on the site",
-              description: "[Material Icons](https://icon-sets.iconify.design/material-symbols/)",
-              itemLabel: props => props.value,
+              description:
+                "[Material Icons](https://icon-sets.iconify.design/material-symbols/)",
+              itemLabel: (props) => props.value,
             },
           ),
           "fa7-brands": fields.array(
@@ -145,8 +159,9 @@ export default config({
             // Labelling options
             {
               label: "Fontawesome brands for use on the site",
-              description: "[Material Icons](https://icon-sets.iconify.design/fa7-brands/)",
-              itemLabel: props => props.value,
+              description:
+                "[Material Icons](https://icon-sets.iconify.design/fa7-brands/)",
+              itemLabel: (props) => props.value,
             },
           ),
         }),

@@ -5,36 +5,42 @@
   "lifelines": [
     {
       "image": "lifelines/community/image.jpg",
+      "secondaryImage": "lifelines/community/secondaryImage.jpg",
       "title": "Community Lifeline",
       "description": "Supplying older people with iPads and training to get online",
       "id": "community"
     },
     {
       "image": "lifelines/food/image.jpg",
+      "secondaryImage": "lifelines/food/secondaryImage.jpg",
       "title": "Food Lifeline",
       "description": "Helping everybody have enough to eat",
       "id": "food"
     },
     {
       "image": "lifelines/wellbeing/image.jpg",
+      "secondaryImage": "lifelines/wellbeing/secondaryImage.jpg",
       "title": "Mental Wellbeing Lifeline",
       "description": "Taking positive action in our communities",
       "id": "wellbeing"
     },
     {
       "image": "lifelines/learning/image.jpg",
+      "secondaryImage": "lifelines/learning/secondaryImage.jpg",
       "title": "Learning Lifeline",
       "description": "Bridging the learning gap",
       "id": "learning"
     },
     {
       "image": "lifelines/loss/image.jpg",
+      "secondaryImage": "lifelines/loss/secondaryImage.jpg",
       "title": "Facing Loss Lifeline",
       "description": "Supporting You in times of loss",
       "id": "loss"
     },
     {
       "image": "lifelines/superstar/image.jpg",
+      "secondaryImage": "lifelines/superstar/secondaryImage.jpg",
       "title": "Superstar Lifeline",
       "description": "Sponsorships for sports, musical and artistic talent",
       "id": "superstar"
