@@ -1,0 +1,20 @@
+---
+const { heading, subheading } = Astro.props;
+---
+
+<section
+  class="mx-auto flex min-h-[583px] flex-col bg-[url(../assets/lg-bg.png)] bg-cover bg-bottom md:min-h-[665px] lg:min-h-[780px]"
+>
+  <h1
+    class="mt-30 ml-6 text-[min(10vw,4rem)] font-bold text-balance text-white md:ml-10 lg:ml-30"
+  >
+    {heading}
+  </h1>
+  {
+    subheading && (
+      <p class="text-[min(1rem, 1.5rem)] ml-6 font-medium text-pretty text-white sm:text-xl/8 md:ml-10 lg:ml-30">
+        {subheading}
+      </p>
+    )
+  }
+</section>

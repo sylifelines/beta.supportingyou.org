@@ -1,9 +1,10 @@
 ---
 import { Image } from "astro:assets";
 const { item } = Astro.props;
-const { image, title, description } = item.data;
----
+const { id, image, title, description } = item.data;
 
+---
+<a href={`./lifeline/${id}`}>
 <div
   class="flex flex-col items-center justify-center rounded-2xl bg-white p-8 text-center"
 >
@@ -41,4 +42,4 @@ const { image, title, description } = item.data;
   <dd class="text-syslate mx-16 text-base/5 font-semibold">
     {description}
   </dd>
-</div>
+</div></a>

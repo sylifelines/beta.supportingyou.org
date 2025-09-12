@@ -17,19 +17,16 @@ import react from "@astrojs/react";
 import markdoc from "@astrojs/markdoc";
 import keystatic from "@keystatic/astro";
 
+import mdx from "@astrojs/mdx";
+
 // import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    icon({
-      include: icons,
-    }),
-    alpinejs(),
-    react(),
-    markdoc(),
-    ...(isDev ? [keystatic()] : []), // uses the integration conditionally
-  ],
+  integrations: [icon({
+    include: icons,
+  }), alpinejs(), react(), markdoc(), // uses the integration conditionally
+  ...(isDev ? [keystatic()] : []), mdx()],
 
   vite: {
     plugins: [tailwindcss()],

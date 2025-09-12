@@ -1,0 +1,29 @@
+---
+import Layout from "@layouts/Layout.astro";
+import LifelineHeading from "@components/LifelineHeading.astro";
+import { getCollection, getEntry, render } from "astro:content";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const lifelinePages = await getCollection("lifelinePages");
+  return lifelinePages.map((lifelinePage) => ({
+    params: { id: lifelinePage.id },
+    props: { lifelinePage },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { lifelinePage } = Astro.props;
+const lifeline = await getEntry(lifelinePage.data.lifeline);
+const { Content } = await render(lifelinePage);
+---
+
+<Layout>
+  <LifelineHeading heading={lifelinePage.data.title} />
+  <div
+    class="mx-4 flex flex-col items-center justify-center gap-4 text-black sm:mx-8 md:mx-12 lg:mx-20"
+  >
+    <Content
+      image={lifeline.data.image}
+      secondaryImage={lifeline.data.secondaryImage}
+    />
+  </div>
+</Layout>
