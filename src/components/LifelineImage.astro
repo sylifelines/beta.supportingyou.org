@@ -1,14 +1,10 @@
 ---
-import { getEntry } from "astro:content";
 import { Image } from "astro:assets";
-const { lifeline, secondary } = Astro.props;
-const {
-  data: { image, secondaryImage, description },
-} = await getEntry("lifelines", lifeline);
+const { image, description } = Astro.props;
 ---
 
 <Image
-  src={secondary ? secondaryImage : image}
+  src={image}
   alt={description}
   class="h-100 w-85 rounded-xl object-cover md:w-185 lg:h-146 lg:w-128"
 />

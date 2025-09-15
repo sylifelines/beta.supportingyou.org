@@ -1,29 +1,71 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import LifelineHeading from "@components/LifelineHeading.astro";
-import { getCollection, getEntry, render } from "astro:content";
+import LifelineImage from "@components/LifelineImage.astro";
+import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-  const lifelinePages = await getCollection("lifelinePages");
-  return lifelinePages.map((lifelinePage) => ({
-    params: { id: lifelinePage.id },
-    props: { lifelinePage },
+  const lifelines = await getCollection("lifelines");
+  return lifelines.map((lifeline) => ({
+    params: { id: lifeline.id },
+    props: { lifeline },
   }));
 }
-// 2. For your template, you can get the entry directly from the prop
-const { lifelinePage } = Astro.props;
-const lifeline = await getEntry(lifelinePage.data.lifeline);
-const { Content } = await render(lifelinePage);
+const {
+  lifeline: { data },
+} = Astro.props;
 ---
 
 <Layout>
-  <LifelineHeading heading={lifelinePage.data.title} />
+  <LifelineHeading title={data.title} />
   <div
-    class="mx-4 flex flex-col items-center justify-center gap-4 text-black sm:mx-8 md:mx-12 lg:mx-20"
+    class="mx-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-8 md:mx-12 lg:mx-20"
   >
-    <Content
-      image={lifeline.data.image}
-      secondaryImage={lifeline.data.secondaryImage}
-    />
+    <div
+      class="text-sygreen mx-4 max-w-[61rem] text-[2rem] font-bold md:text-[2.5rem] lg:text-[3rem]"
+    >
+      {data.headline}
+    </div>
+    <div>
+      <LifelineImage image={data.image} description={data.description} />
+    </div>
+    <div
+      class="text-sygreen mx-4 max-w-[61rem] text-[2rem] font-bold md:text-[2.5rem] lg:text-[3rem]"
+    >
+      Behind the headlines
+    </div>
+    <div class="mx-4 max-w-[61rem] text-black">
+      {
+        data.bth.map((p) => (
+          <>
+            <p>{p}</p>
+            <br />
+          </>
+        ))
+      }
+    </div>
+    <div
+      class="bg-syblue flex w-full flex-col items-center gap-2 lg:flex-row lg:gap-8"
+    >
+      <div class="mt-4">
+        <LifelineImage
+          image={data.secondaryImage}
+          description={data.description}
+        />
+      </div>
+      <div class="text-bold text-xl text-black">
+        Supporting you - {data.syheadline}
+      </div>
+      <div class="mx-4 max-w-[61rem] text-black">
+        {
+          data.sy.map((p) => (
+            <>
+              <p>{p}</p>
+              <br />
+            </>
+          ))
+        }
+      </div>
+    </div>
   </div>
 </Layout>

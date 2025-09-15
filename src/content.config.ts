@@ -6,8 +6,12 @@ type Lifeline = {
   secondaryImage?: string;
   title: string;
   description: string;
-  heading?: string;
-  bth?: string;
+  headline?: string;
+  bth?: string[];
+  syheadline?: string;
+  sybold?: string;
+  sy?: string[];
+  testimonial?: string;
   id: string;
 };
 
@@ -73,8 +77,13 @@ const lifelines = defineCollection({
       image: z.nullable(image()),
       secondaryImage: z.nullable(image()),
       title: z.string(),
+      headline: z.string(),
+      bth: z.array(z.string()),
+      syheadline: z.string(),
+      sybold: z.string(),
+      sy: z.array(z.string()),
       description: z.string(),
     }),
 });
 
-export const collections = { whatToDos, lifelines, businessBenefits, lifelinePages };
+export const collections = { whatToDos, lifelines, businessBenefits };
