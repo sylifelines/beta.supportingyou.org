@@ -17,25 +17,35 @@
       "sybold": "Our Community Lifeline is one where we can all make a difference.",
       "sy": [
         "Our Helpers and Heroes raise awareness on how to spot loneliness and reach out. Saying hello, having a conversation, dropping in on a neighbour who's just lost someone is a vital part of bringing someone back to the community.",
-        "We throw them a lifeline",
+        "We throw them a lifeline.",
         "Our Community Lifeline is committed to helping the over 60s engage with - and learn to love - technology. Working with our charity partners, we are actively involved in helping older people feel comfortable and confident using digital technology, iPads and Face Time. That way they can often reconnect with long lost friends and family."
       ],
-      "testimonial": "Thanks to Supporting You, I'm overcoming my fears about technology. I'd never even used a computer before, but now I'm proud to say I shop online. That's such an asset to me, as visiting shops is becoming increasingly difficult.",
-      "description": "Supplying older people with iPads and training to get online",
+      "testimonial": [
+        "\"Thanks to Supporting You, I'm overcoming my fears about technology. I'd never even used a computer before, but now I'm proud to say I shop online. That's such an asset to me, as visiting shops is becoming increasingly difficult.\"",
+        "Mrs N, Chepstow"
+      ],
+      "description": "Supplying older people with iPads and training",
       "id": "community"
     },
     {
       "image": "lifelines/food/image.jpg",
       "secondaryImage": "lifelines/food/secondaryImage.jpg",
       "title": "Food",
-      "headline": "",
+      "headline": "4 million children are in food poverty in the uk right now. That's twice the number in 2022.",
       "bth": [
-        ""
+        "Almost 4 million people used a food bank in 2022.",
+        "Apart from energy bills, the cost of putting food on the table is now the biggest single pressure for those living on a low income.",
+        "Britain's food poverty rate is among the highest in Europe, according to local.gov.org, March 2023.",
+        "But many are struggling along in silence, feeling that it's somehow their fault that their wages can't keep up with rocketing food prices.",
+        "Our Food Lifeline is there to support them and their families with kindness and without judgement.",
+        "We throw them a lifeline."
       ],
-      "syheadline": "",
-      "sybold": "",
+      "syheadline": "helping everybody have enough to eat",
+      "sybold": "It's a basic human right. Yet 8.4 million people in the UK go hungry, skip meals to feed their children, or simply run out of food days before the money comes in.",
       "sy": [
-        ""
+        "4 million of them are children - double the number just one year ago. Even with more food banks and more free school meals, the food poverty gap is widening.",
+        "Supporting You works directly with charity partners to get emergency food deliveries to those aren't mobile, or don't have transport.",
+        "We help make sure that food gets to the people who need it most."
       ],
       "description": "Helping everybody have enough to eat",
       "id": "food"
@@ -44,14 +54,18 @@
       "image": "lifelines/wellbeing/image.jpg",
       "secondaryImage": "lifelines/wellbeing/secondaryImage.jpg",
       "title": "Mental Wellbeing",
-      "headline": "",
+      "headline": "1 in 4 people are facing mental health issues every year",
       "bth": [
-        ""
+        "All of us will feel unable to cope at some point in our lives.",
+        "It may be triggered by a sudden crisis, a relationship breakdown or going bankrupt.",
+        "1 in 6 young adults have experienced mental trauma - yet felt that their problems weren't 'serious enough to be taken seriously by other people.'",
+        "We exist to make sure that those millions of people don't struggle in silence - and kindness goes a long way when helping people with mental health issues."
       ],
-      "syheadline": "",
-      "sybold": "",
+      "syheadline": "taking positive action on mental health in our communities",
+      "sybold": "We are not professional counsellors. We're not medical professionals. But we are a community built on kindness - and kindness goes a long way when helping people with mental health issues.",
       "sy": [
-        ""
+        "Our Helpers and Heroes are all people who notice when something 'doesn't seem right' with a close friend, or family member. Or when somebody's gone 'off the radar' and not been seen for a while. We reach out with kindness, respect, and most importantly, practical professional help when needed.",
+        "We throw them a lifeline."
       ],
       "description": "Taking positive action in our communities",
       "id": "wellbeing"
@@ -60,15 +74,19 @@
       "image": "lifelines/learning/image.jpg",
       "secondaryImage": "lifelines/learning/secondaryImage.jpg",
       "title": "Learning",
+      "headline": "4 OUT OF 5 UK ADULTS HAVE LOW NUMERACY SKILLS - 1 IN 6 ADULTS STRUGGLE TO READ",
       "description": "Bridging the learning gap",
-      "headline": "",
       "bth": [
-        ""
+        "Millions of people dread getting the bill in a café or restaurant, and not simply because of the rising cost of eating out. It's because they don't feel confident that they have the numbers skills to work out if it's right, or what their share is.",
+        "4 out of 5 UK adults have low numeracy skills - below that of a grade 4 GCSE. A further 1 in 6 adults struggle with reading and 1 in 5 children are struggling to read well by the age of 11.",
+        "Those who can read and add up do well. Those who never had the chance to learn in a safe, supportive environment fall further and further behind.",
+        "We reach out to those people - and throw them a lifeline."
       ],
-      "syheadline": "",
-      "sybold": "",
+      "syheadline": "bridging the learning gap",
+      "sybold": "We believe that everyone can and should have access to learning - inside or outside the classroom.",
       "sy": [
-        ""
+        "The Supporting You Education and Learning Lifeline helps to find and fund the right digital devices and tools people now need to learn - and trains individuals to use them. From young adults who can't learn in a classroom, to someone who's just been made redundant and needs to get better skills.",
+        "Everybody deserves the chance to learn on their own terms, in their own time and with an approach that treats them as adults."
       ],
       "id": "learning"
     },
@@ -76,14 +94,17 @@
       "image": "lifelines/loss/image.jpg",
       "secondaryImage": "lifelines/loss/secondaryImage.jpg",
       "title": "Facing Loss",
-      "headline": "",
+      "headline": "1 child in every classroom will have lost a parent",
       "bth": [
-        ""
+        "At some point in our lives, all of us will come face to face with loss. Like our mental health, the emotional trauma of loss or bereavement is often invisible to others.",
+        "The feeling of loss is an emotional body blow. For 10% of people, those feelings of grief and loss don't lessen over time.",
+        "We believe no one should be unsupported when facing loss."
       ],
-      "syheadline": "",
-      "sybold": "",
+      "syheadline": "in times of loss",
+      "sybold": "We need help, kindness and understanding to heal - and it doesn't happen with a single hug. Our Helpers and Heroes spend many hours just checking in and having a chat with people, supporting them through the different stages of grieving.",
       "sy": [
-        ""
+        "We help with the practical things, such as driving people to the funeral directors, or picking up some shopping. Most of all, we listen with kindness and respect.",
+        "Some of the people who are most vulnerable will need professional help and support to get them through - and we're able to provide that through our network of trusted charity partners and organisations."
       ],
       "description": "Supporting You in times of loss",
       "id": "loss"
@@ -92,16 +113,18 @@
       "image": "lifelines/superstar/image.jpg",
       "secondaryImage": "lifelines/superstar/secondaryImage.jpg",
       "title": "Superstar",
-      "headline": "",
+      "headline": "948,000 people aged 16-24 neither earning nor learning in the UK",
       "bth": [
-        ""
+        "This is typically where the onus and investment is being made into 'talent' in the UK; employment, education and training.",
+        "Supporting you plays a niche role in supporting the emerging shining talents of young people who often find themselves outside these generic parameters."
       ],
-      "syheadline": "",
-      "sybold": "",
+      "syheadline": "a stepping stone for emerging talent to stardom",
+      "sybold": "We all know of someone with a superstar talent, whether it be worthy of Olympian standard or something as weird and wonderful as we see on our screens.",
       "sy": [
-        ""
+        "Supporting you loves to harness and support such talent by funding their journey to success.",
+        "Our unique spectrum of support is not isolated to either music, sport, dance or performance but is open to all and we look forward to hearing from you all."
       ],
-      "description": "Sponsorships for sports, musical and artistic talent",
+      "description": "Sponsorships for sports, musical & artistic talent",
       "id": "superstar"
     }
   ]

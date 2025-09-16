@@ -11,7 +11,7 @@ type Lifeline = {
   syheadline?: string;
   sybold?: string;
   sy?: string[];
-  testimonial?: string;
+  testimonial?: string[];
   id: string;
 };
 
@@ -82,6 +82,7 @@ const lifelines = defineCollection({
       syheadline: z.string(),
       sybold: z.string(),
       sy: z.array(z.string()),
+      testimonial: z.optional(z.array(z.string())),
       description: z.string(),
     }),
 });

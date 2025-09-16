@@ -44,28 +44,41 @@ const {
         ))
       }
     </div>
-    <div
-      class="bg-syblue flex w-full flex-col items-center gap-2 lg:flex-row lg:gap-8"
-    >
-      <div class="mt-4">
+    <div class="bg-syblue flex w-svw flex-col p-4 lg:flex-row lg:p-8">
+      <div class="flex basis-1/2 justify-center lg:order-2">
         <LifelineImage
           image={data.secondaryImage}
           description={data.description}
         />
       </div>
-      <div class="text-bold text-xl text-black">
-        Supporting you - {data.syheadline}
-      </div>
-      <div class="mx-4 max-w-[61rem] text-black">
-        {
-          data.sy.map((p) => (
-            <>
-              <p>{p}</p>
-              <br />
-            </>
-          ))
-        }
+      <div class="mt-4 basis-1/2 lg:mt-0 lg:text-left">
+        <div class="text-xl font-bold text-black">
+          Supporting you - {data.syheadline}
+        </div>
+        <div class="font-bold text-black">
+          {data.sybold}
+        </div>
+        <div class="mx-4 text-black">
+          {
+            data.sy.map((p) => (
+              <>
+                <p>{p}</p>
+                <br />
+              </>
+            ))
+          }
+        </div>
       </div>
     </div>
+    { data.testimonial && (
+    <div class="-mt-4 bg-sygreen text-white w-svw flex p-4 lg:p-8 italic justify-center">
+     <div class="max-w-xl"> {data.testimonial.map((p) => (
+              <>
+                <p>{p}</p>
+                <br />
+              </>
+            ))}
+    </div></div>
+    )}
   </div>
 </Layout>
