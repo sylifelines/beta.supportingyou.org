@@ -21,17 +21,6 @@ type BusinessBenefit = {
   id: string;
 };
 
-const lifelinePages = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/data/lifelinePages" }),
-  schema: z.object({
-    title: z.string(),
-    // Reference a single author from the `authors` collection by `id`
-    lifeline: reference('lifelines'),
-    // Reference an array of related posts from the `blog` collection by `slug`
-    // relatedPosts: z.array(reference('blog')),
-  })
-});
-
 const whatToDos = defineCollection({
   loader: file("src/data/whatToDo.json", {
     parser: (text) => JSON.parse(text).items,

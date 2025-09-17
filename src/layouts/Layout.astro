@@ -2,6 +2,7 @@
 import { Font } from "astro:assets";
 import "@styles/global.css";
 import Header from "@sections/HeaderSection.astro";
+import FooterSection from "@sections/FooterSection.astro";
 ---
 
 <Font cssVariable="--font-quicksand" preload />
@@ -20,6 +21,7 @@ import Header from "@sections/HeaderSection.astro";
     >
       <Header />
       <slot />
+      <FooterSection />
     </main>
   </body>
 </html>

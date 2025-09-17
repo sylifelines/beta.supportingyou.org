@@ -21,7 +21,16 @@ import BusinessBenefitCard from "@components/BusinessBenefitCard.astro";
     <div class="carousel carousel-center rounded-box max-w-lvw space-x-4 p-4">
       {
         benefits.map((benefit, i) => (
-          <BusinessBenefitCard item={benefit} index={i} />
+          <BusinessBenefitCard item={benefit} index={++i} />
+        ))
+      }
+    </div>
+    <div class="flex w-full justify-center gap-2 py-2">
+      {
+        benefits.map((benefit, i) => (
+          <a href={`#slide${++i}`} class="btn btn-xs">
+            {i}
+          </a>
         ))
       }
     </div>

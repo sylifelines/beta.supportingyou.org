@@ -13,11 +13,8 @@ import alpinejs from "@astrojs/alpinejs";
 
 const isLocal = true;
 // Requrements for keystatic
-import react from "@astrojs/react";
-import markdoc from "@astrojs/markdoc";
 import keystatic from "@keystatic/astro";
 
-import mdx from "@astrojs/mdx";
 
 // import cloudflare from "@astrojs/cloudflare";
 
@@ -25,8 +22,8 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   integrations: [icon({
     include: icons,
-  }), alpinejs(), react(), markdoc(), // uses the integration conditionally
-  ...(isDev ? [keystatic()] : []), mdx()],
+  }), alpinejs(), // uses the integration conditionally
+  ...(isDev ? [keystatic()] : [])],
 
   vite: {
     plugins: [tailwindcss()],

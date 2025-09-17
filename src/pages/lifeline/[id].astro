@@ -1,17 +1,21 @@
 ---
+import { heading, subheading } from "@data/whatNext.json";
 import Layout from "@layouts/Layout.astro";
+import LifelineCard from "@components/LifelineCard.astro";
 import LifelineHeading from "@components/LifelineHeading.astro";
 import LifelineImage from "@components/LifelineImage.astro";
+import RegisterButton from "@components/RegisterButton.astro";
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
   const lifelines = await getCollection("lifelines");
   return lifelines.map((lifeline) => ({
     params: { id: lifeline.id },
-    props: { lifeline },
+    props: { lifelines, lifeline },
   }));
 }
 const {
+  lifelines,
   lifeline: { data },
 } = Astro.props;
 ---
@@ -44,41 +48,80 @@ const {
         ))
       }
     </div>
-    <div class="bg-syblue flex w-svw flex-col p-4 lg:flex-row lg:p-8">
-      <div class="flex basis-1/2 justify-center lg:order-2">
-        <LifelineImage
-          image={data.secondaryImage}
-          description={data.description}
-        />
-      </div>
-      <div class="mt-4 basis-1/2 lg:mt-0 lg:text-left">
-        <div class="text-xl font-bold text-black">
-          Supporting you - {data.syheadline}
+    <div
+      class="bg-syblue flex w-svw flex-col items-center justify-center p-4 lg:p-8"
+    >
+      <div class="flex max-w-7xl flex-col lg:flex-row">
+        <div class="flex basis-1/2 justify-center lg:order-2">
+          <LifelineImage
+            image={data.secondaryImage}
+            description={data.description}
+          />
         </div>
-        <div class="font-bold text-black">
-          {data.sybold}
-        </div>
-        <div class="mx-4 text-black">
-          {
-            data.sy.map((p) => (
-              <>
-                <p>{p}</p>
-                <br />
-              </>
-            ))
-          }
+        <div class="mt-4 basis-1/2 lg:mt-0 lg:text-left">
+          <div class="text-xl font-bold text-black">
+            Supporting you - {data.syheadline}
+          </div>
+          <div class="font-bold text-black">
+            {data.sybold}
+          </div>
+          <div class="mx-4 text-black">
+            {
+              data.sy.map((p) => (
+                <>
+                  <p>{p}</p>
+                  <br />
+                </>
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>
-    { data.testimonial && (
-    <div class="-mt-4 bg-sygreen text-white w-svw flex p-4 lg:p-8 italic justify-center">
-     <div class="max-w-xl"> {data.testimonial.map((p) => (
+    {
+      data.testimonial && (
+        <div class="bg-sygreen -mt-4 flex w-svw justify-center p-4 text-white italic lg:p-8">
+          <div class="max-w-xl">
+            {" "}
+            {data.testimonial.map((p) => (
               <>
                 <p>{p}</p>
                 <br />
               </>
             ))}
-    </div></div>
-    )}
+          </div>
+        </div>
+      )
+    }
+  </div>
+  <div class="text-sygreen my-6 max-w-lvw text-center text-2xl font-bold">
+    Lifelines and community initiatives
+  </div>
+  <div class="flex max-w-lvw flex-col items-center">
+    <div
+      class="carousel carousel-center rounded-box max-w-lvw space-x-6 p-4 lg:max-w-7xl"
+    >
+      {
+        lifelines.map((lifeline, i) => (
+          <LifelineCard item={lifeline} index={++i} />
+        ))
+      }
+    </div>
+    <div class="flex w-full justify-center gap-2 py-2">
+      {
+        lifelines.map((benefit, i) => (
+          <a href={`#slide${++i}`} class="btn btn-xs">
+            {i}
+          </a>
+        ))
+      }
+    </div>
+    <div
+      class="text-sygreen bg-syslate/5 border-syslate/30 m-8 max-w-5xl rounded-2xl border-2 p-8 text-center text-4xl font-bold"
+    >
+      {heading}
+      <div class="my-6 text-base font-normal text-black">{subheading}</div>
+      <RegisterButton />
+    </div>
   </div>
 </Layout>

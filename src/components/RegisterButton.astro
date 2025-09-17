@@ -1,0 +1,21 @@
+---
+import { navLinks } from "@data/navLinks.json";
+const { buttonText = "Register Here" } = Astro.props;
+---
+
+{
+  navLinks.map((n) => {
+    if (n.name == "Register") {
+      return (
+        <a href={n.url}>
+          <button
+            type="button"
+            class="bg-sygreen hover:bg-syblue focus-visible:outline-sygreen rounded-full px-6 py-4 text-base font-semibold text-white shadow-xs hover:text-black focus-visible:outline-2 focus-visible:outline-offset-2"
+          >
+            {buttonText}
+          </button>
+        </a>
+      );
+    }
+  })
+}
