@@ -1,0 +1,17 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+// 1. Generate a new path for every collection entry
+const faqs = await getCollection("faqs");
+// console.log(JSON.stringify(faqs, null, 2));
+---
+<Layout>
+<div class="flex flex-col justify-center items-center my-6">
+      {
+        faqs.map((faq, i) => (
+        <div class="text-black">{faq.data.question}</div>
+        <div class="text-syslate">{faq.data.answer}</div>
+        ))
+      }
+</div>
+</Layout>

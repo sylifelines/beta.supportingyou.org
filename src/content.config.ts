@@ -1,5 +1,22 @@
-import { defineCollection, reference, z } from "astro:content";
-import { file, glob } from "astro/loaders";
+import { defineCollection, z } from "astro:content";
+import { file } from "astro/loaders";
+import { sheetLoader } from "astro-sheet-loader";
+// optionally import a transform function
+// import { camelCase, snake_case } from "astro-sheet-loader";
+
+const faqs = defineCollection({
+  loader: sheetLoader({
+    document: import.meta.env.GOOGLE_SHEET_URL, //"1wb2TbwRE-McOA663PGgf0InTsXC6b07ThEy_j6_MCDw",
+    allowBlanks: true,
+    sheet: '&headers=1'
+  }),
+  // if you don't define a schema yourself, it will be automatically generated
+  schema: z.object({
+    id: z.number(),
+    answer: z.string(),
+    question: z.string(),
+  })
+});
 
 type Lifeline = {
   image: string;
@@ -76,4 +93,4 @@ const lifelines = defineCollection({
     }),
 });
 
-export const collections = { whatToDos, lifelines, businessBenefits };
+export const collections = { whatToDos, lifelines, businessBenefits, faqs };

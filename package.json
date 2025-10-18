@@ -22,6 +22,7 @@
     "alpinejs": "^3.15.0",
     "astro": "^5.14.5",
     "astro-icon": "^1.1.5",
+    "astro-sheet-loader": "^1.0.5",
     "daisyui": "^5.3.7",
     "nanoid": "^5.1.6",
     "tailwindcss": "^4.1.14"
